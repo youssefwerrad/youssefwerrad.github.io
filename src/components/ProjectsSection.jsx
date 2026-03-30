@@ -17,16 +17,10 @@ const projects = [
     link: "https://youssefwerrad.github.io/e-plantShopping/",
   },
   {
-    title: "Folio — Book Search",
-    description: "A full-stack book search app built with Express.js and React, powered by the Open Library API. Search by title, author, or genre with pagination, book detail modals, and star ratings.",
-    tags: ["React", "Node.js", "Express.js", "Open Library API", "Vite"],
-    github: "https://github.com/youssefwerrad/folio-book-search",
-  },
-  {
-    title: "Back-End API with Node.js",
-    description: "A RESTful back-end API built with Node.js and Express as part of the IBM Back-end Application Development course, with full CRUD operations.",
-    tags: ["Node.js", "Express.js", "REST API"],
-    github: "https://github.com/youssefwerrad",
+    title: "Book Nook Finder",
+    description: "A React + Express full-stack app for searching millions of books via the [Open Library](https://openlibrary.org) API.",
+    tags: ["React", "JavaScript", "Express.js", "Open Library API", "Vite"],
+    github: "https://github.com/youssefwerrad/book-nook-finder.git",
   },
 ];
 

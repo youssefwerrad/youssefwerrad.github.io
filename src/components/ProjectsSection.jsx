@@ -2,22 +2,24 @@ import React, { useState } from "react";
 import { ScrollReveal } from "./ScrollReveal";
 import { ExternalLink, Github } from "lucide-react";
 
+const BASE = import.meta.env.BASE_URL;
+
 const DR_SCREENS = [
-  { label: "Home",   img: "/screenshots/dr_home.webp",   alt: "DealerRate homepage" },
-  { label: "Detail", img: "/screenshots/dr_detail.webp", alt: "DealerRate dealership detail" },
-  { label: "Cars",   img: "/screenshots/dr_cars.webp",   alt: "DealerRate car manager" },
+  { label: "Home",   img: `${BASE}screenshots/dr_home.webp`,   alt: "DealerRate homepage" },
+  { label: "Detail", img: `${BASE}screenshots/dr_detail.webp`, alt: "DealerRate dealership detail" },
+  { label: "Cars",   img: `${BASE}screenshots/dr_cars.webp`,   alt: "DealerRate car manager" },
 ];
 
 const PLANT_SCREENS = [
-  { label: "Landing", img: "/screenshots/plant_landing.webp", alt: "Paradise Nursery landing page" },
-  { label: "Shop",    img: "/screenshots/plant_shop.webp",    alt: "Paradise Nursery plant shop" },
-  { label: "Cart",    img: "/screenshots/plant_cart.webp",    alt: "Paradise Nursery cart" },
+  { label: "Landing", img: `${BASE}screenshots/plant_landing.webp`, alt: "Paradise Nursery landing page" },
+  { label: "Shop",    img: `${BASE}screenshots/plant_shop.webp`,    alt: "Paradise Nursery plant shop" },
+  { label: "Cart",    img: `${BASE}screenshots/plant_cart.webp`,    alt: "Paradise Nursery cart" },
 ];
 
 const BOOK_SCREENS = [
-  { label: "Discover", img: "/screenshots/book_home.webp",    alt: "Bookwise homepage" },
-  { label: "Results",  img: "/screenshots/book_results.webp", alt: "Bookwise search results" },
-  { label: "Detail",   img: "/screenshots/book_modal.webp",   alt: "Bookwise book detail modal" },
+  { label: "Discover", img: `${BASE}screenshots/book_home.webp`,    alt: "Bookwise homepage" },
+  { label: "Results",  img: `${BASE}screenshots/book_results.webp`, alt: "Bookwise search results" },
+  { label: "Detail",   img: `${BASE}screenshots/book_modal.webp`,   alt: "Bookwise book detail modal" },
 ];
 
 function ScreenshotCard({ screens, title, badge, description, tags, github, link, tall = false }) {

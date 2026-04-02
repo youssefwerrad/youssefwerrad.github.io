@@ -1,7 +1,7 @@
 import { ScrollReveal } from "./ScrollReveal";
 
 const skillGroups = [
-  { category: "Languages", skills: ["Python", "JavaScript", "SQL"] },
+  { category: "Languages", skills: ["Python", "JavaScript", "C", "SQL"] },
   { category: "Front-End", skills: ["React", "Responsive Design", "HTML5", "CSS3"] },
   { category: "Back-End", skills: ["Node.js", "Express.js", "REST APIs", "Flask"] },
   { category: "Cloud & DevOps", skills: ["Google Cloud Platform", "IBM Cloud", "Docker", "CI/CD", "Git & GitHub"] },

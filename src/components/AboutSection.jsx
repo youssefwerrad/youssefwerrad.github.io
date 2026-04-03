@@ -1,10 +1,37 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { Code2, Globe, Zap } from "lucide-react";
+import { Code2, Zap, Brain, Cloud, GitBranch, Layout } from "lucide-react";
 
-const highlights = [
-  { icon: Code2, title: "Full Stack & Back-End", description: "Proficient in Python, JavaScript, Node.js, React, Express, and REST APIs." },
-  { icon: Globe, title: "Multilingual", description: "Fluent in Arabic (native), Portuguese (C1/C2), French (C1/C2), and English (B1/B2)." },
-  { icon: Zap, title: "Cloud & DevOps", description: "Experienced with GCP, IBM Cloud, Docker basics, and CI/CD pipelines." },
+const capabilities = [
+  {
+    icon: Code2,
+    title: "Full Stack Development",
+    description: "Building modern web applications with React, Node.js, Express, Django, and Flask — from UI to database.",
+  },
+  {
+    icon: Layout,
+    title: "Responsive Design",
+    description: "Crafting clean, accessible interfaces that work seamlessly across all devices using HTML5, CSS3, and Tailwind.",
+  },
+  {
+    icon: Brain,
+    title: "AI & Machine Learning",
+    description: "Foundations in search algorithms, neural networks, and NLP through Harvard's CS50 AI with Python.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud & Deployment",
+    description: "Deploying and managing applications on Google Cloud Platform and IBM Cloud with Docker and CI/CD pipelines.",
+  },
+  {
+    icon: GitBranch,
+    title: "DevOps & Agile",
+    description: "Applying Agile/Scrum methodologies, Git workflows, and software engineering best practices on every project.",
+  },
+  {
+    icon: Zap,
+    title: "Self-Directed Learning",
+    description: "Built a strong foundation through Harvard's CS50 program series and IBM's professional development curriculum.",
+  },
 ];
 
 export const AboutSection = () => {
@@ -13,38 +40,23 @@ export const AboutSection = () => {
       <div className="container mx-auto max-w-5xl">
         <ScrollReveal>
           <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">About</p>
-          <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-6 leading-tight">
-            A little context.
+          <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-12 leading-tight">
+            What I do.
           </h2>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12 mt-8">
-          <ScrollReveal delay={0.1}>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I'm a Junior Full Stack and Back-End Developer based in Olhão, Portugal, with a strong self-taught foundation built through Harvard's CS50 program series and IBM's professional development curriculum.
-              </p>
-              <p>
-                I'm passionate about building impactful software and continuously growing my skills. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.2}>
-            <div className="space-y-6">
-              {highlights.map((item, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-highlight-muted flex items-center justify-center">
-                    <item.icon size={20} className="text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
-                  </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {capabilities.map((item, i) => (
+            <ScrollReveal key={item.title} delay={0.07 * i} className="h-full">
+              <div className="h-full flex flex-col gap-3 p-6 rounded-2xl border border-border bg-card hover:border-foreground/20 transition-colors duration-200">
+                <div className="w-10 h-10 rounded-xl bg-highlight-muted flex items-center justify-center">
+                  <item.icon size={20} className="text-primary" />
                 </div>
-              ))}
-            </div>
-          </ScrollReveal>
+                <h3 className="font-semibold text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
     </section>

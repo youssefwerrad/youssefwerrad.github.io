@@ -1,10 +1,24 @@
 import { ScrollReveal } from "./ScrollReveal";
 
-const skillGroups = [
-  { category: "Languages", skills: ["Python", "JavaScript", "C", "SQL"] },
-  { category: "Front-End", skills: ["React", "Responsive Design", "HTML5", "CSS3"] },
-  { category: "Back-End", skills: ["Node.js", "Express.js", "REST APIs", "Flask"] },
-  { category: "Cloud & DevOps", skills: ["Google Cloud Platform", "IBM Cloud", "Docker", "CI/CD", "Git & GitHub"] },
+const skills = [
+  { name: "Python",      icon: "py" },
+  { name: "JavaScript",  icon: "js" },
+  { name: "C",           icon: "c" },
+  { name: "SQL",         icon: "mysql" },
+  { name: "HTML5",       icon: "html" },
+  { name: "CSS3",        icon: "css" },
+  { name: "React",       icon: "react" },
+  { name: "Tailwind",    icon: "tailwind" },
+  { name: "Node.js",     icon: "nodejs" },
+  { name: "Express",     icon: "express" },
+  { name: "Flask",       icon: "flask" },
+  { name: "Django",      icon: "django" },
+  { name: "Docker",      icon: "docker" },
+  { name: "Git",         icon: "git" },
+  { name: "GitHub",      icon: "github" },
+  { name: "GCP",         icon: "gcp" },
+  { name: "Vite",        icon: "vite" },
+  { name: "Redux",       icon: "redux" },
 ];
 
 export const SkillsSection = () => {
@@ -18,21 +32,20 @@ export const SkillsSection = () => {
           </h2>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skillGroups.map((group, i) => (
-            <ScrollReveal key={group.category} delay={0.08 * i}>
-              <div>
-                <h3 className="font-semibold text-foreground mb-4 text-sm tracking-wide uppercase">
-                  {group.category}
-                </h3>
-                <ul className="space-y-2.5">
-                  {group.skills.map((skill) => (
-                    <li key={skill} className="text-muted-foreground text-sm flex items-center gap-2.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+          {skills.map((skill, i) => (
+            <ScrollReveal key={skill.name} delay={0.03 * i}>
+              <div className="flex flex-col items-center gap-2.5 p-4 rounded-xl border border-border bg-background hover:border-foreground/20 transition-colors duration-200 group">
+                <img
+                  src={"https://skillicons.dev/icons?i=" + skill.icon}
+                  alt={skill.name}
+                  width={36}
+                  height={36}
+                  className="group-hover:scale-110 transition-transform duration-200"
+                />
+                <span className="text-xs text-muted-foreground font-medium text-center leading-tight">
+                  {skill.name}
+                </span>
               </div>
             </ScrollReveal>
           ))}
@@ -40,4 +53,4 @@ export const SkillsSection = () => {
       </div>
     </section>
   );
-};
+}; 

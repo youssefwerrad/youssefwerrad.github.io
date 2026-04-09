@@ -48,17 +48,17 @@ const projects = [
 function BrowserMockup({ screens, url }) {
   const [active, setActive] = useState(0);
   return (
-    <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-md flex flex-col">
-      <div className="flex items-center px-4 py-3 bg-secondary border-b border-border gap-3 shrink-0">
-        <div className="flex gap-1.5">
+    <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-md flex flex-col w-full min-w-0">
+      <div className="flex items-center px-4 py-3 bg-secondary border-b border-border gap-3 shrink-0 min-w-0">
+        <div className="flex gap-1.5 shrink-0">
           <span className="w-3 h-3 rounded-full bg-red-400" />
           <span className="w-3 h-3 rounded-full bg-yellow-400" />
           <span className="w-3 h-3 rounded-full bg-green-400" />
         </div>
-        <div className="flex-1 flex items-center justify-center">
-          <span className="text-xs font-mono text-muted-foreground">{url}</span>
+        <div className="flex-1 flex items-center justify-center min-w-0 overflow-hidden">
+          <span className="text-xs font-mono text-muted-foreground truncate">{url}</span>
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 shrink-0">
           {screens.map((s, i) => (
             <button
               key={s.label}
@@ -86,11 +86,11 @@ function ProjectRow({ project, index }) {
   const reversed = index % 2 !== 0;
   return (
     <ScrollReveal delay={0.05}>
-      <div className={reversed ? "grid md:grid-cols-2 gap-12 lg:gap-20 items-center md:[direction:rtl]" : "grid md:grid-cols-2 gap-12 lg:gap-20 items-center"}>
-        <div className={reversed ? "[direction:ltr]" : ""}>
+      <div className={reversed ? "grid md:grid-cols-2 gap-12 lg:gap-20 items-center md:[direction:rtl] overflow-hidden" : "grid md:grid-cols-2 gap-12 lg:gap-20 items-center overflow-hidden"}>
+        <div className={reversed ? "[direction:ltr] min-w-0" : "min-w-0"}>
           <BrowserMockup screens={project.screens} url={project.url} />
         </div>
-        <div className={reversed ? "flex flex-col gap-5 [direction:ltr]" : "flex flex-col gap-5"}>
+        <div className={reversed ? "flex flex-col gap-5 [direction:ltr] min-w-0" : "flex flex-col gap-5 min-w-0"}>
           <div>
             <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-3">{project.title}</h3>
             <p className="text-muted-foreground leading-relaxed">{project.description}</p>
@@ -124,7 +124,7 @@ function ProjectRow({ project, index }) {
 }
 
 export const ProjectsSection = () => (
-  <section id="projects" className="py-24 md:py-32 px-6">
+  <section id="projects" className="py-24 md:py-32 px-6 overflow-hidden">
     <div className="container mx-auto max-w-5xl">
       <ScrollReveal>
         <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">Portfolio</p>

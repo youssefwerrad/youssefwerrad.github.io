@@ -20,7 +20,6 @@ export default defineConfig(() => ({
           "vendor-ui":     [
             "@radix-ui/react-toast",
             "@radix-ui/react-tooltip",
-            "@radix-ui/react-toggle",
           ],
         },
       },

@@ -1,21 +1,28 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Terminal } from "lucide-react";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
-      <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-highlight-muted opacity-60 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 -left-32 w-72 h-72 rounded-full bg-secondary opacity-80 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 grid-overlay pointer-events-none" />
+      <div className="absolute inset-0 mesh-bg pointer-events-none" />
+      <div className="absolute inset-0 noise-overlay pointer-events-none" />
+
+      <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-neon/10 blur-[120px] pointer-events-none animate-float" />
+      <div className="absolute bottom-1/4 -left-32 w-80 h-80 rounded-full bg-neon/8 blur-[120px] pointer-events-none animate-float-slow" />
 
       <div className="relative z-10 max-w-3xl text-center">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-6"
         >
-          Full Stack Developer · Back-End Developer
-        </motion.p>
+          <Terminal size={13} className="text-neon" />
+          <span className="text-xs font-mono-alt tracking-wide text-foreground/80">
+            Full Stack Developer · Back-End Developer
+          </span>
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +34,7 @@ export const HeroSection = () => {
           <br />
           I build things for
           <br />
-          <span className="text-primary">the web</span>.
+          <span className="neon-glow-text">the web</span>.
         </motion.h1>
 
         <motion.p
@@ -47,14 +54,14 @@ export const HeroSection = () => {
         >
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-[box-shadow,transform] duration-200 active:scale-[0.97]"
+            className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full neon-fill text-background font-semibold text-sm shadow-lg shadow-neon/20 hover:shadow-xl hover:shadow-neon/35 transition-[box-shadow,transform] duration-200 active:scale-[0.97]"
           >
             View Projects
-            <ArrowDown size={16} />
+            <ArrowDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-[background-color,transform] duration-200 active:scale-[0.97]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full glass-card text-foreground font-medium text-sm hover:border-neon/40 transition-[background-color,border-color,transform] duration-200 active:scale-[0.97]"
           >
             Let's Connect
           </a>

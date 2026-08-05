@@ -48,22 +48,22 @@ const projects = [
 function BrowserMockup({ screens, url }) {
   const [active, setActive] = useState(0);
   return (
-    <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-md flex flex-col w-full min-w-0">
-      <div className="flex items-center px-4 py-3 bg-secondary border-b border-border gap-3 shrink-0 min-w-0">
+    <div className="rounded-2xl overflow-hidden glass-card shadow-xl flex flex-col w-full min-w-0">
+      <div className="flex items-center px-4 py-3 bg-secondary/60 border-b border-border gap-3 shrink-0 min-w-0">
         <div className="flex gap-1.5 shrink-0">
-          <span className="w-3 h-3 rounded-full bg-red-400" />
-          <span className="w-3 h-3 rounded-full bg-yellow-400" />
-          <span className="w-3 h-3 rounded-full bg-green-400" />
+          <span className="w-3 h-3 rounded-full bg-red-400/70" />
+          <span className="w-3 h-3 rounded-full bg-yellow-400/70" />
+          <span className="w-3 h-3 rounded-full bg-neon/70" />
         </div>
         <div className="flex-1 flex items-center justify-center min-w-0 overflow-hidden">
-          <span className="text-xs font-mono text-muted-foreground truncate">{url}</span>
+          <span className="text-xs font-mono-alt text-muted-foreground truncate">{url}</span>
         </div>
         <div className="flex gap-1 shrink-0">
           {screens.map((s, i) => (
             <button
               key={s.label}
               onClick={() => setActive(i)}
-              className={active === i ? "px-2 py-0.5 rounded text-xs font-medium bg-primary text-primary-foreground" : "px-2 py-0.5 rounded text-xs font-medium text-muted-foreground hover:text-foreground"}
+              className={active === i ? "px-2 py-0.5 rounded text-xs font-medium bg-neon text-background" : "px-2 py-0.5 rounded text-xs font-medium text-muted-foreground hover:text-foreground"}
             >
               {s.label}
             </button>
@@ -92,30 +92,31 @@ function ProjectRow({ project, index }) {
         </div>
         <div className={reversed ? "flex flex-col gap-5 [direction:ltr] min-w-0" : "flex flex-col gap-5 min-w-0"}>
           <div>
-            <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-3">{project.title}</h3>
+            <span className="text-xs font-mono-alt text-neon">0{index + 1}</span>
+            <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-3 mt-1">{project.title}</h3>
             <p className="text-muted-foreground leading-relaxed">{project.description}</p>
           </div>
           <div className="flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-full bg-highlight-muted text-primary">{tag}</span>
+              <span key={tag} className="text-xs font-mono-alt px-2.5 py-1 rounded-full bg-neon/10 border border-neon/20 text-neon">{tag}</span>
             ))}
           </div>
           <div className="flex items-center gap-3 pt-1">
             {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-all">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full neon-fill text-background font-semibold text-sm hover:shadow-lg hover:shadow-neon/25 transition-all">
                 Visit Project
                 <ExternalLink size={15} />
               </a>
             )}
             {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-all">
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-card text-foreground font-medium text-sm hover:border-neon/40 transition-all">
                 <Github size={15} />
                 Code
               </a>
             )}
           </div>
           {project.link && (
-            <p className="text-sm text-muted-foreground font-mono">{project.url} →</p>
+            <p className="text-sm text-muted-foreground font-mono-alt">{project.url} →</p>
           )}
         </div>
       </div>
@@ -127,7 +128,7 @@ export const ProjectsSection = () => (
   <section id="projects" className="py-24 md:py-32 px-6 overflow-hidden">
     <div className="container mx-auto max-w-5xl">
       <ScrollReveal>
-        <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">Portfolio</p>
+        <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// Portfolio</p>
         <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-3 leading-tight">Projects</h2>
         <p className="text-muted-foreground mb-16">Projects and client work.</p>
       </ScrollReveal>

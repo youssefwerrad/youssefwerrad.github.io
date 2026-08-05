@@ -7,7 +7,7 @@ export const Footer = () => {
         </p>
         <a
           href="#"
-          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="text-sm text-muted-foreground hover:text-neon transition-colors"
         >
           Back to top ↑
         </a>

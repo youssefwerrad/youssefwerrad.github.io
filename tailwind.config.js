@@ -54,6 +54,7 @@ export default {
         "text-subtle": "hsl(var(--text-subtle))",
         highlight: "hsl(var(--highlight))",
         "highlight-muted": "hsl(var(--highlight-muted))",
+        neon: "hsl(var(--neon))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

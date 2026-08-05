@@ -23,27 +23,31 @@ const skills = [
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 md:py-32 px-6 bg-card">
-      <div className="container mx-auto max-w-5xl">
+    <section id="skills" className="relative py-24 md:py-32 px-6 overflow-hidden">
+      <div className="absolute inset-0 bg-card" />
+      <div className="absolute -left-40 top-0 w-96 h-96 rounded-full bg-neon/6 blur-[120px] pointer-events-none" />
+      <div className="absolute -right-40 bottom-0 w-96 h-96 rounded-full bg-neon/6 blur-[120px] pointer-events-none" />
+
+      <div className="relative container mx-auto max-w-5xl">
         <ScrollReveal>
-          <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">Skills</p>
+          <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// Skills</p>
           <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-12 leading-tight">
             What I work with.
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {skills.map((skill, i) => (
             <ScrollReveal key={skill.name} delay={0.03 * i}>
-              <div className="flex flex-col items-center gap-2.5 p-4 rounded-xl border border-border bg-background hover:border-foreground/20 transition-colors duration-200 group">
+              <div className="group flex flex-col items-center gap-2.5 p-4 rounded-xl glass-card glow-hover min-w-0">
                 <img
                   src={"https://skillicons.dev/icons?i=" + skill.icon}
                   alt={skill.name}
                   width={36}
                   height={36}
-                  className="group-hover:scale-110 transition-transform duration-200"
+                  className="shrink-0 group-hover:scale-110 transition-transform duration-200"
                 />
-                <span className="text-xs text-muted-foreground font-medium text-center leading-tight">
+                <span className="w-full text-[11px] sm:text-xs text-muted-foreground font-medium text-center leading-snug break-words group-hover:text-foreground transition-colors">
                   {skill.name}
                 </span>
               </div>
@@ -53,4 +57,4 @@ export const SkillsSection = () => {
       </div>
     </section>
   );
-}; 
+};

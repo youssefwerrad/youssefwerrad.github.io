@@ -9,10 +9,11 @@ const socials = [
 
 export const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 px-6">
-      <div className="container mx-auto max-w-2xl text-center">
+    <section id="contact" className="relative py-24 md:py-32 px-6 overflow-hidden">
+      <div className="absolute inset-0 mesh-bg pointer-events-none" />
+      <div className="relative container mx-auto max-w-2xl text-center">
         <ScrollReveal>
-          <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">Contact</p>
+          <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// Contact</p>
           <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-4 leading-tight">
             Let's connect.
           </h2>
@@ -24,7 +25,7 @@ export const ContactSection = () => {
         <ScrollReveal delay={0.15}>
           <a
             href="mailto:youssefwerrad@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-[box-shadow,transform] duration-200 active:scale-[0.97] mb-10"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full neon-fill text-background font-semibold shadow-lg shadow-neon/20 hover:shadow-xl hover:shadow-neon/35 transition-[box-shadow,transform] duration-200 active:scale-[0.97] mb-10"
           >
             <Mail size={18} />
             Say Hello
@@ -38,7 +39,7 @@ export const ContactSection = () => {
                 key={s.label}
                 href={s.href}
                 aria-label={s.label}
-                className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-[color,border-color,transform] duration-200 active:scale-95"
+                className="w-11 h-11 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-neon hover:border-neon/40 transition-[color,border-color,transform] duration-200 active:scale-95"
               >
                 <s.icon size={18} />
               </a>

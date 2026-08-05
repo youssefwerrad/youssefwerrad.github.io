@@ -6,7 +6,7 @@ const capabilities = [
     icon: Code2,
     title: "Full Stack Development",
     description: "Building modern web applications with React, Node.js, Express, Django, and Flask — from UI to database.",
-    span: "lg:col-span-2 lg:row-span-2",
+    span: "lg:col-span-2",
   },
   {
     icon: Layout,
@@ -51,15 +51,15 @@ export const AboutSection = () => {
           </h2>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:auto-rows-[180px]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {capabilities.map((item, i) => (
             <ScrollReveal key={item.title} delay={0.07 * i} className={`h-full ${item.span}`}>
-              <div className="group relative h-full flex flex-col gap-3 p-6 rounded-2xl glass-card glow-hover overflow-hidden">
+              <div className="group relative h-full flex flex-col gap-3 p-5 sm:p-6 rounded-2xl glass-card glow-hover overflow-hidden">
                 <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-neon/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative w-11 h-11 rounded-xl bg-neon/10 border border-neon/20 flex items-center justify-center">
+                <div className="relative w-11 h-11 rounded-xl bg-neon/10 border border-neon/20 flex items-center justify-center shrink-0">
                   <item.icon size={20} className="text-neon" />
                 </div>
-                <h3 className="relative font-semibold text-foreground">{item.title}</h3>
+                <h3 className="relative font-semibold text-foreground leading-snug">{item.title}</h3>
                 <p className="relative text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             </ScrollReveal>

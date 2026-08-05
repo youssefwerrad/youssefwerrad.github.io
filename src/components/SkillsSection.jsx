@@ -8,17 +8,11 @@ const skills = [
   { name: "HTML5",       icon: "html" },
   { name: "CSS3",        icon: "css" },
   { name: "React",       icon: "react" },
-  { name: "Tailwind",    icon: "tailwind" },
-  { name: "Node.js",     icon: "nodejs" },
-  { name: "Express",     icon: "express" },
   { name: "Flask",       icon: "flask" },
   { name: "Django",      icon: "django" },
   { name: "Docker",      icon: "docker" },
   { name: "Git",         icon: "git" },
-  { name: "GitHub",      icon: "github" },
-  { name: "GCP",         icon: "gcp" },
-  { name: "Vite",        icon: "vite" },
-  { name: "Redux",       icon: "redux" },
+  { name: "GitHub",      icon: "github" }
 ];
 
 export const SkillsSection = () => {

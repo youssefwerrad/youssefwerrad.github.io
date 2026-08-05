@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 const navLinks = [
   { label: "Projects", href: "#projects" },
@@ -11,12 +11,27 @@ const navLinks = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dark, setDark] = useState(true);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    setDark(saved ? saved === "dark" : true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const toggleTheme = () => {
+    setDark((d) => {
+      const next = !d;
+      document.documentElement.classList.toggle("dark", next);
+      localStorage.setItem("theme", next ? "dark" : "light");
+      return next;
+    });
+  };
 
   return (
     <nav
@@ -39,6 +54,13 @@ export const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-secondary transition-colors duration-200 active:scale-95 text-foreground"
+            aria-label="Toggle theme"
+          >
+            {dark ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
           <a
             href="#contact"
             className="px-4 py-2 rounded-full text-xs font-semibold neon-fill text-background hover:shadow-lg hover:shadow-neon/25 transition-shadow"
@@ -48,6 +70,9 @@ export const Navbar = () => {
         </div>
 
         <div className="flex md:hidden items-center gap-2">
+          <button onClick={toggleTheme} className="p-2 text-foreground" aria-label="Toggle theme">
+            {dark ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="p-2 text-foreground" aria-label="Menu">
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>

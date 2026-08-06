@@ -32,16 +32,16 @@ const projects = [
     link: "https://youssefwerrad.github.io/e-plantShopping/",
   },
   {
-    title: "Book Nook Finder",
-    description: "A React + Express full-stack app searching millions of books via the Open Library API with trending discovery and a rich detail modal.",
-    url: "github.com/youssefwerrad/book-nook-finder",
+    title: "Book Reviews",
+    description: "A Django web app for discovering and reviewing books via the Open Library API, with a warm, library-inspired design system.",
+    url: "github.com/youssefwerrad/bookreviews",
     screens: [
       { label: "Discover", img: BASE + "screenshots/book_home.webp",    alt: "Bookwise home" },
       { label: "Results",  img: BASE + "screenshots/book_results.webp", alt: "Bookwise results" },
       { label: "Detail",   img: BASE + "screenshots/book_modal.webp",   alt: "Bookwise detail" },
     ],
-    tags: ["React", "Express.js", "Open Library API", "Vite"],
-    github: "https://github.com/youssefwerrad/book-nook-finder",
+    tags: ["Python", "Django", "SQL", "Bootstrap"],
+    github: "https://github.com/youssefwerrad/bookreviews",
   },
 ];
 

@@ -23,9 +23,9 @@ const projects = [
     description: "A responsive e-commerce app for online plant shopping built with React and Redux Toolkit with real-time cart management.",
     url: "youssefwerrad.github.io/e-plantShopping",
     screens: [
-      { label: "Landing", img: BASE + "screenshots/plant_landing.webp", alt: "Paradise Nursery landing" },
-      { label: "Shop",    img: BASE + "screenshots/plant_shop.webp",    alt: "Paradise Nursery shop" },
-      { label: "Cart",    img: BASE + "screenshots/plant_cart.webp",    alt: "Paradise Nursery cart" },
+      { label: "Landing", img: BASE + "screenshots/plant_landing.png", alt: "Paradise Nursery landing" },
+      { label: "Shop",    img: BASE + "screenshots/plant_shop.png",    alt: "Paradise Nursery shop" },
+      { label: "Cart",    img: BASE + "screenshots/plant_cart.png",    alt: "Paradise Nursery cart" },
     ],
     tags: ["React", "Redux Toolkit", "Vite", "JavaScript"],
     github: "https://github.com/youssefwerrad/e-plantShopping",
@@ -37,7 +37,7 @@ const projects = [
     url: "github.com/youssefwerrad/bookreviews",
     screens: [
       { label: "Discover", img: BASE + "screenshots/book_home.png",    alt: "Bookwise home" },
-      { label: "Results",  img: BASE + "screenshots/book_results.webp", alt: "Bookwise results" },
+      { label: "Results",  img: BASE + "screenshots/book_results.png", alt: "Bookwise results" },
       { label: "Detail",   img: BASE + "screenshots/book_modal.webp",   alt: "Bookwise detail" },
     ],
     tags: ["Python", "Django", "SQL", "Bootstrap"],

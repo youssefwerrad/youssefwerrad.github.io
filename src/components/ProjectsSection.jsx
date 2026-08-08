@@ -1,152 +1,82 @@
-import React, { useState } from "react";
+import React from "react";
 import { ScrollReveal } from "./ScrollReveal";
-import { ExternalLink, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const BASE = import.meta.env.BASE_URL;
 
 const projects = [
   {
-    title: "Dealership Rate",
-    description: "A car dealership directory and review platform with self-service dealer dashboards, ownership-based authorization, and a Dockerized Django REST Framework + React stack.",
+    title: "DealerRate",
+    description: "Car dealership directory with self-service dealer dashboards and ownership-based authorization.",
     url: "github.com/youssefwerrad/dealership_rate",
-    screens: [
-      { label: "Directory", img: BASE + "screenshots/dealership_landing.png",   alt: "Dealership Rate dealer directory" },
-      { label: "Detail",    img: BASE + "screenshots/dealership_registering.png", alt: "Dealership Rate dealer detail" },
-      { label: "Dashboard", img: BASE + "screenshots/dealership_reviews.png",   alt: "Dealership Rate self-service dashboard" },
-    ],
-    tags: ["Django REST Framework", "PostgreSQL", "React", "Docker"],
-    github: "https://github.com/youssefwerrad/dealership_rate",
+    image: { src: BASE + "screenshots/dr_home.webp", alt: "DealerRate dealer directory" },
+    href: "https://github.com/youssefwerrad/dealership_rate",
   },
   {
     title: "Paradise Nursery",
-    description: "A plant e-commerce catalog with categorized browsing, real-time cart management, and an admin panel for managing inventory, built with React and Redux Toolkit.",
+    description: "E-commerce app for online plant shopping with real-time cart management.",
     url: "youssefwerrad.github.io/e-plantShopping",
-    screens: [
-      { label: "Landing", img: BASE + "screenshots/plant_landing.png", alt: "Paradise Nursery landing" },
-      { label: "Shop",    img: BASE + "screenshots/plant_shop.png",    alt: "Paradise Nursery shop" },
-      { label: "Cart",    img: BASE + "screenshots/plant_cart.png",    alt: "Paradise Nursery cart" },
-    ],
-    tags: ["React", "Redux Toolkit", "Vite", "JavaScript"],
-    github: "https://github.com/youssefwerrad/e-plantShopping",
-    link: "https://youssefwerrad.github.io/e-plantShopping/",
+    image: { src: BASE + "screenshots/plant_landing.webp", alt: "Paradise Nursery landing" },
+    href: "https://youssefwerrad.github.io/e-plantShopping/",
   },
   {
     title: "Book Reviews",
-    description: "A Django web app for discovering and reviewing books via the Open Library API, with a warm, library-inspired design system.",
+    description: "Discover and review books via the Open Library API, with a library-inspired design system.",
     url: "github.com/youssefwerrad/bookreviews",
-    screens: [
-      { label: "Discover", img: BASE + "screenshots/book_home.png",    alt: "Bookwise home" },
-      { label: "Results",  img: BASE + "screenshots/book_results.png", alt: "Bookwise results" },
-      { label: "Detail",   img: BASE + "screenshots/book_modal.webp",   alt: "Bookwise detail" },
-    ],
-    tags: ["Python", "Django", "SQL", "Bootstrap"],
-    github: "https://github.com/youssefwerrad/bookreviews",
+    image: { src: BASE + "screenshots/book_home.webp", alt: "Book Reviews home" },
+    href: "https://github.com/youssefwerrad/bookreviews",
   },
   {
-    title: "Care Point",
-    description: "A clinic management system who lets patients book appointments with real-time availability checking, lets doctors manage their schedule and issue prescriptions, and gives admins a system-wide view of clinic activity.",
-    url: "youssefwerrad.github.io/CarePoint",
-    screens: [
-      { label: "Landing", img: BASE + "screenshots/carepoint_landing.png", alt: "Care Point landing" },
-      { label: "Appointments", img: BASE + "screenshots/carepoint_appointments.png", alt: "Care Point appointments" },
-      { label: "Prescriptions", img: BASE + "screenshots/carepoint_prescriptions.png", alt: "Care Point prescriptions" },
-    ],
-    tags: ["Flask", "Python", "SQLite", "JavaScript"],
-    github: "https://github.com/youssefwerrad/CarePoint",
-    link: "https://youssefwerrad.github.io/CarePoint/",
-  }
+    title: "CarePoint",
+    description: "Clinic management system with three roles, availability-aware booking, and inline ownership checks.",
+    url: "github.com/youssefwerrad/CarePoint",
+    image: { src: BASE + "screenshots/carepoint_dashboard.webp", alt: "CarePoint doctor dashboard" },
+    href: "https://github.com/youssefwerrad/CarePoint",
+  },
 ];
 
-function BrowserMockup({ screens, url }) {
-  const [active, setActive] = useState(0);
+function ProjectCard({ project, delay }) {
   return (
-    <div className="rounded-2xl overflow-hidden glass-card shadow-xl flex flex-col w-full min-w-0">
-      <div className="flex items-center px-4 py-3 bg-secondary/60 border-b border-border gap-3 shrink-0 min-w-0">
-        <div className="flex gap-1.5 shrink-0">
-          <span className="w-3 h-3 rounded-full bg-red-400/70" />
-          <span className="w-3 h-3 rounded-full bg-yellow-400/70" />
-          <span className="w-3 h-3 rounded-full bg-neon/70" />
+    <ScrollReveal delay={delay}>
+      <a
+        href={project.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group block rounded-2xl overflow-hidden glass-card glow-hover"
+      >
+        <div className="relative overflow-hidden aspect-[4/3]">
+          <img
+            src={project.image.src}
+            alt={project.image.alt}
+            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-background/80 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+            <ArrowUpRight size={16} className="text-neon" />
+          </div>
         </div>
-        <div className="flex-1 flex items-center justify-center min-w-0 overflow-hidden">
-          <span className="text-xs font-mono-alt text-muted-foreground truncate">{url}</span>
-        </div>
-        <div className="flex gap-1 shrink-0">
-          {screens.map((s, i) => (
-            <button
-              key={s.label}
-              onClick={() => setActive(i)}
-              className={active === i ? "px-2 py-0.5 rounded text-xs font-medium bg-neon text-background" : "px-2 py-0.5 rounded text-xs font-medium text-muted-foreground hover:text-foreground"}
-            >
-              {s.label}
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
-        <img
-          key={active}
-          src={screens[active].img}
-          alt={screens[active].alt}
-          className="absolute inset-0 w-full h-full object-cover object-top"
-        />
-      </div>
-    </div>
-  );
-}
 
-function ProjectRow({ project, index }) {
-  const reversed = index % 2 !== 0;
-  return (
-    <ScrollReveal delay={0.05}>
-      <div className={reversed ? "grid md:grid-cols-2 gap-12 lg:gap-20 items-center md:[direction:rtl] overflow-hidden" : "grid md:grid-cols-2 gap-12 lg:gap-20 items-center overflow-hidden"}>
-        <div className={reversed ? "[direction:ltr] min-w-0" : "min-w-0"}>
-          <BrowserMockup screens={project.screens} url={project.url} />
+        <div className="p-5 flex flex-col gap-1.5">
+          <h3 className="font-display text-xl text-foreground">{project.title}</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+          <span className="text-xs font-mono-alt text-neon mt-1">{project.url}</span>
         </div>
-        <div className={reversed ? "flex flex-col gap-5 [direction:ltr] min-w-0" : "flex flex-col gap-5 min-w-0"}>
-          <div>
-            <span className="text-xs font-mono-alt text-neon">0{index + 1}</span>
-            <h3 className="font-display text-3xl sm:text-4xl text-foreground mb-3 mt-1">{project.title}</h3>
-            <p className="text-muted-foreground leading-relaxed">{project.description}</p>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {project.tags.map((tag) => (
-              <span key={tag} className="text-xs font-mono-alt px-2.5 py-1 rounded-full bg-neon/10 border border-neon/20 text-neon">{tag}</span>
-            ))}
-          </div>
-          <div className="flex items-center gap-3 pt-1">
-            {project.link && (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full neon-fill text-background font-semibold text-sm hover:shadow-lg hover:shadow-neon/25 transition-all">
-                Visit Project
-                <ExternalLink size={15} />
-              </a>
-            )}
-            {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-card text-foreground font-medium text-sm hover:border-neon/40 transition-all">
-                <Github size={15} />
-                Code
-              </a>
-            )}
-          </div>
-          {project.link && (
-            <p className="text-sm text-muted-foreground font-mono-alt">{project.url} →</p>
-          )}
-        </div>
-      </div>
+      </a>
     </ScrollReveal>
   );
 }
 
 export const ProjectsSection = () => (
-  <section id="projects" className="py-24 md:py-32 px-6 overflow-hidden">
-    <div className="container mx-auto max-w-5xl">
+  <section id="projects" className="py-24 md:py-32 px-6">
+    <div className="container mx-auto max-w-4xl">
       <ScrollReveal>
         <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// Portfolio</p>
         <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-3 leading-tight">Projects</h2>
-        <p className="text-muted-foreground mb-16">Projects and client work.</p>
+        <p className="text-muted-foreground mb-12">Explore some of the projects I've developed.</p>
       </ScrollReveal>
-      <div className="flex flex-col gap-24">
+      <div className="grid sm:grid-cols-2 gap-6">
         {projects.map((project, i) => (
-          <ProjectRow key={project.title} project={project} index={i} />
+          <ProjectCard key={project.title} project={project} delay={0.08 * i} />
         ))}
       </div>
     </div>

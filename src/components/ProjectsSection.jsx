@@ -7,20 +7,19 @@ const BASE = import.meta.env.BASE_URL;
 const projects = [
   {
     title: "DealerRate",
-    description: "A full-stack car dealership review platform with sentiment analysis, real-time search, async reviews, and a dual-role user system.",
-    url: "dealer-rate.onrender.com",
+    description: "A car dealership directory and review platform with self-service dealer dashboards, ownership-based authorization, and a Dockerized Django REST Framework + React stack.",
+    url: "github.com/youssefwerrad/dealership_rate",
     screens: [
-      { label: "Home",   img: BASE + "screenshots/dr_home.webp",   alt: "DealerRate homepage" },
-      { label: "Detail", img: BASE + "screenshots/dr_detail.webp", alt: "DealerRate detail" },
-      { label: "Cars",   img: BASE + "screenshots/dr_cars.webp",   alt: "DealerRate cars" },
+      { label: "Directory", img: BASE + "screenshots/dr_home.webp",   alt: "DealerRate dealer directory" },
+      { label: "Detail",    img: BASE + "screenshots/dr_detail.webp", alt: "DealerRate dealer detail" },
+      { label: "Dashboard", img: BASE + "screenshots/dr_cars.webp",   alt: "DealerRate self-service dashboard" },
     ],
-    tags: ["Django", "Python", "JavaScript", "SQLite"],
-    github: "https://github.com/youssefwerrad/Dealer_Rate",
-    link: "https://dealer-rate.onrender.com/",
+    tags: ["Django REST Framework", "PostgreSQL", "React", "Docker"],
+    github: "https://github.com/youssefwerrad/dealership_rate",
   },
   {
     title: "Paradise Nursery",
-    description: "A responsive e-commerce app for online plant shopping built with React and Redux Toolkit with real-time cart management.",
+    description: "A plant e-commerce catalog with categorized browsing, real-time cart management, and an admin panel for managing inventory, built with React and Redux Toolkit.",
     url: "youssefwerrad.github.io/e-plantShopping",
     screens: [
       { label: "Landing", img: BASE + "screenshots/plant_landing.png", alt: "Paradise Nursery landing" },
@@ -43,6 +42,19 @@ const projects = [
     tags: ["Python", "Django", "SQL", "Bootstrap"],
     github: "https://github.com/youssefwerrad/bookreviews",
   },
+  {
+    title: "Care Point",
+    description: "A clinic management system who lets patients book appointments with real-time availability checking, lets doctors manage their schedule and issue prescriptions, and gives admins a system-wide view of clinic activity.",
+    url: "youssefwerrad.github.io/CarePoint",
+    screens: [
+      { label: "Landing", img: BASE + "screenshots/carepoint_landing.png", alt: "Care Point landing" },
+      { label: "Appointments", img: BASE + "screenshots/carepoint_appointments.png", alt: "Care Point appointments" },
+      { label: "Prescriptions", img: BASE + "screenshots/carepoint_prescriptions.png", alt: "Care Point prescriptions" },
+    ],
+    tags: ["Flask", "Python", "SQLite", "JavaScript"],
+    github: "https://github.com/youssefwerrad/CarePoint",
+    link: "https://youssefwerrad.github.io/CarePoint/",
+  }
 ];
 
 function BrowserMockup({ screens, url }) {

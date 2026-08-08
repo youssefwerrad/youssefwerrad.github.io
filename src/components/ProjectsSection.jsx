@@ -6,13 +6,13 @@ const BASE = import.meta.env.BASE_URL;
 
 const projects = [
   {
-    title: "DealerRate",
+    title: "Dealership Rate",
     description: "A car dealership directory and review platform with self-service dealer dashboards, ownership-based authorization, and a Dockerized Django REST Framework + React stack.",
     url: "github.com/youssefwerrad/dealership_rate",
     screens: [
-      { label: "Directory", img: BASE + "screenshots/dr_home.webp",   alt: "DealerRate dealer directory" },
-      { label: "Detail",    img: BASE + "screenshots/dr_detail.webp", alt: "DealerRate dealer detail" },
-      { label: "Dashboard", img: BASE + "screenshots/dr_cars.webp",   alt: "DealerRate self-service dashboard" },
+      { label: "Directory", img: BASE + "screenshots/dealership_landing.png",   alt: "Dealership Rate dealer directory" },
+      { label: "Detail",    img: BASE + "screenshots/dealership_registering.png", alt: "Dealership Rate dealer detail" },
+      { label: "Dashboard", img: BASE + "screenshots/dealership_reviews.png",   alt: "Dealership Rate self-service dashboard" },
     ],
     tags: ["Django REST Framework", "PostgreSQL", "React", "Docker"],
     github: "https://github.com/youssefwerrad/dealership_rate",

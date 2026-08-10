@@ -20,7 +20,7 @@ export const HeroSection = () => {
         >
           <Terminal size={13} className="text-neon" />
           <span className="text-xs font-mono-alt tracking-wide text-foreground/80">
-            Full Stack Developer · Back-End Developer
+            Software Engineer
           </span>
         </motion.div>
 
@@ -43,7 +43,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-lg text-muted-foreground max-w-xl mx-auto mb-10"
         >
-          I turn ideas into working products — and I'm just getting started.
+          I turn ideas into working products — and I build fast, clean, and scalable web applications.
         </motion.p>
 
         <motion.div

@@ -16,7 +16,7 @@ const projects = [
     title: "Paradise Nursery",
     description: "E-commerce app for online plant shopping with real-time cart management.",
     url: "youssefwerrad.github.io/e-plantShopping",
-    image: { src: BASE + "screenshots/plant_landing.webp", alt: "Paradise Nursery landing" },
+    image: { src: BASE + "screenshots/plant_landing.png", alt: "Paradise Nursery landing" },
     href: "https://youssefwerrad.github.io/e-plantShopping/",
   },
   {

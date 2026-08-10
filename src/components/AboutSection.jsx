@@ -5,13 +5,13 @@ const capabilities = [
   {
     icon: Code2,
     title: "Full Stack Development",
-    description: "Building modern web applications with React, Node.js, Express, Django, and Flask — from UI to database.",
+    description: "Building modern web applications with Python, JavaScript, React, Django, and Flask — from UI to database.",
     span: "lg:col-span-2",
   },
   {
     icon: Layout,
     title: "Responsive Design",
-    description: "Clean, accessible interfaces across every device using HTML5, CSS3, and Tailwind.",
+    description: "Clean, accessible interfaces across every device using HTML5, CSS3, and Bootstrap.",
     span: "",
   },
   {
@@ -23,7 +23,7 @@ const capabilities = [
   {
     icon: Cloud,
     title: "Cloud & Deployment",
-    description: "Deploying and managing applications on Google Cloud and IBM Cloud with Docker and CI/CD pipelines.",
+    description: "Deploying and managing applications on AWS with Docker and CI/CD pipelines.",
     span: "lg:col-span-2",
   },
   {

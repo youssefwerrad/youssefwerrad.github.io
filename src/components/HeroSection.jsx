@@ -20,7 +20,7 @@ export const HeroSection = () => {
         >
           <Terminal size={13} className="text-neon" />
           <span className="text-xs font-mono-alt tracking-wide text-foreground/80">
-            Software Engineer
+            Software Engineering
           </span>
         </motion.div>
 

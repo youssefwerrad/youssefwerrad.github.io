@@ -12,7 +12,7 @@ const skills = [
   { name: "Django",      icon: "django" },
   { name: "Docker",      icon: "docker" },
   { name: "Git",         icon: "git" },
-  { name: "GitHub",      icon: "github" }
+  { name: "GitHub",      icon: "github" },
 ];
 
 export const SkillsSection = () => {
@@ -39,6 +39,8 @@ export const SkillsSection = () => {
                   alt={skill.name}
                   width={36}
                   height={36}
+                  loading="lazy"
+                  decoding="async"
                   className="shrink-0 group-hover:scale-110 transition-transform duration-200"
                 />
                 <span className="w-full text-[11px] sm:text-xs text-muted-foreground font-medium text-center leading-snug break-words group-hover:text-foreground transition-colors">

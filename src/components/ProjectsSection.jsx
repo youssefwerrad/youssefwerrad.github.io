@@ -16,7 +16,7 @@ const projects = [
     title: "Paradise Nursery",
     description: "E-commerce app for online plant shopping with real-time cart management.",
     url: "youssefwerrad.github.io/e-plantShopping",
-    image: { src: BASE + "screenshots/plant_landing.png", alt: "Paradise Nursery landing" },
+    image: { src: BASE + "screenshots/plant_landing.webp", alt: "Paradise Nursery landing" },
     href: "https://youssefwerrad.github.io/e-plantShopping/",
   },
   {
@@ -48,6 +48,8 @@ function ProjectCard({ project, delay }) {
           <img
             src={project.image.src}
             alt={project.image.alt}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

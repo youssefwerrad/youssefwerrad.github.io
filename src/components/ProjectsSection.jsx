@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Paradise Nursery",
-    description: "E-commerce app for online plant shopping with real-time cart management.",
+    description: "Extended an IBM starter exercise into a full e-commerce app — real-time cart management, dynamic filtering, and a complete visual redesign.",
     url: "youssefwerrad.github.io/e-plantShopping",
     image: { src: BASE + "screenshots/plant_landing.webp", alt: "Paradise Nursery landing" },
     href: "https://youssefwerrad.github.io/e-plantShopping/",

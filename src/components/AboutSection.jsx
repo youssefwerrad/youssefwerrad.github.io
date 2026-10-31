@@ -4,68 +4,61 @@ import { Code2, Zap, Brain, Cloud, GitBranch, Layout } from "lucide-react";
 const capabilities = [
   {
     icon: Code2,
-    title: "Full Stack Development",
-    description: "Building modern web applications with Python, JavaScript, React, Django, and Flask — from UI to database.",
-    span: "lg:col-span-2",
+    title: "Full stack development",
+    description: "Building web applications with Python, JavaScript, React, Django, and Flask.",
   },
   {
     icon: Layout,
-    title: "Responsive Design",
-    description: "Clean, accessible interfaces across every device using HTML5, CSS3, and Bootstrap.",
-    span: "",
+    title: "Responsive interfaces",
+    description: "Creating clear, accessible experiences that work across devices.",
   },
   {
     icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Search algorithms, neural networks, and NLP through Harvard's CS50 AI.",
-    span: "",
+    title: "AI & machine learning",
+    description: "Exploring search algorithms, neural networks, and natural language processing.",
   },
   {
     icon: Cloud,
-    title: "Cloud & Deployment",
-    description: "Deploying and managing applications on AWS with Docker and CI/CD pipelines.",
-    span: "lg:col-span-2",
+    title: "Cloud & deployment",
+    description: "Shipping applications with AWS, Docker, and CI/CD workflows.",
   },
   {
     icon: GitBranch,
-    title: "DevOps & Agile",
-    description: "Agile/Scrum methodologies, Git workflows, and software engineering best practices.",
-    span: "",
+    title: "Team workflows",
+    description: "Working with Git, Agile practices, and thoughtful engineering fundamentals.",
   },
   {
     icon: Zap,
-    title: "Self-Directed Learning",
-    description: "A strong foundation through Harvard's CS50 series and IBM's professional curriculum.",
-    span: "",
+    title: "Always learning",
+    description: "Building a strong foundation through Harvard CS50 and IBM programs.",
   },
 ];
 
-export const AboutSection = () => {
-  return (
-    <section id="about" className="py-24 md:py-32 px-6">
-      <div className="container mx-auto max-w-5xl">
-        <ScrollReveal>
-          <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// About</p>
-          <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-12 leading-tight">
-            What I do.
-          </h2>
-        </ScrollReveal>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {capabilities.map((item, i) => (
-            <ScrollReveal key={item.title} delay={0.07 * i} className={`h-full ${item.span}`}>
-              <div className="group relative h-full flex flex-col gap-3 p-5 sm:p-6 rounded-2xl glass-card glow-hover overflow-hidden">
-                <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-neon/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative w-11 h-11 rounded-xl bg-neon/10 border border-neon/20 flex items-center justify-center shrink-0">
-                  <item.icon size={20} className="text-neon" />
-                </div>
-                <h3 className="relative font-semibold text-foreground leading-snug">{item.title}</h3>
-                <p className="relative text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-              </div>
-            </ScrollReveal>
-          ))}
+export const AboutSection = () => (
+  <section id="about" className="section-wrap">
+    <div className="about-layout">
+      <ScrollReveal className="about-statement">
+        <div className="section-heading">
+          <p className="eyebrow">A little about me</p>
+          <h2 className="section-title">Curiosity meets craft.</h2>
+          <p className="section-description">
+            I enjoy taking a problem from the first sketch to a working product—bringing
+            together practical engineering and a considered user experience.
+          </p>
         </div>
+      </ScrollReveal>
+
+      <div className="capability-grid">
+        {capabilities.map((item, i) => (
+          <ScrollReveal key={item.title} delay={0.05 * i}>
+            <article className="capability-card">
+              <item.icon size={20} strokeWidth={1.7} aria-hidden="true" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          </ScrollReveal>
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);

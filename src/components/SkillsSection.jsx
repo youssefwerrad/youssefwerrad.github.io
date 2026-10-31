@@ -1,55 +1,170 @@
+import { useState } from "react";
 import { ScrollReveal } from "./ScrollReveal";
 
-const skills = [
-  { name: "Python",      icon: "py" },
-  { name: "JavaScript",  icon: "js" },
-  { name: "C",           icon: "c" },
-  { name: "SQL",         icon: "mysql" },
-  { name: "HTML5",       icon: "html" },
-  { name: "CSS3",        icon: "css" },
-  { name: "React",       icon: "react" },
-  { name: "Flask",       icon: "flask" },
-  { name: "Django",      icon: "django" },
-  { name: "Docker",      icon: "docker" },
-  { name: "Git",         icon: "git" },
-  { name: "GitHub",      icon: "github" },
+const skillGroups = [
+  {
+    title: "Languages",
+    tools: [
+      { name: "Python", icon: "py" },
+      { name: "JavaScript", icon: "js" },
+      { name: "C", icon: "c" },
+      { name: "SQL", icon: "mysql" },
+    ],
+  },
+  {
+    title: "Frontend",
+    tools: [
+      { name: "React", icon: "react" },
+      { name: "HTML5", icon: "html" },
+      { name: "CSS3", icon: "css" },
+    ],
+  },
+  {
+    title: "Backend",
+    tools: [
+      { name: "Django", icon: "django" },
+      { name: "Flask", icon: "flask" },
+    ],
+  },
+  {
+    title: "Tools & workflow",
+    tools: [
+      { name: "Docker", icon: "docker" },
+      { name: "Git", icon: "git" },
+      { name: "GitHub", icon: "github" },
+    ],
+  },
 ];
 
-export const SkillsSection = () => {
+const allSkills = skillGroups.flatMap((group) =>
+  group.tools.map((tool) => ({ ...tool, category: group.title }))
+);
+
+const layouts = [
+  { id: "logo-grid", label: "Logo grid" },
+  { id: "bento", label: "Bento" },
+  { id: "ticker", label: "Ticker" },
+  { id: "minimal", label: "Minimal" },
+];
+
+function LogoGrid() {
   return (
-    <section id="skills" className="relative py-24 md:py-32 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-card" />
-      <div className="absolute -left-40 top-0 w-96 h-96 rounded-full bg-neon/6 blur-[120px] pointer-events-none" />
-      <div className="absolute -right-40 bottom-0 w-96 h-96 rounded-full bg-neon/6 blur-[120px] pointer-events-none" />
+    <div className="skills-logo-grid">
+      {allSkills.map((skill) => (
+        <article className="skills-logo-card" key={skill.name}>
+          <img
+            src={`https://skillicons.dev/icons?i=${skill.icon}`}
+            alt=""
+            width="36"
+            height="36"
+            loading="lazy"
+            decoding="async"
+          />
+          <span>{skill.name}</span>
+        </article>
+      ))}
+    </div>
+  );
+}
 
-      <div className="relative container mx-auto max-w-5xl">
-        <ScrollReveal>
-          <p className="text-sm font-mono-alt tracking-widest uppercase neon-text mb-3">// Skills</p>
-          <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-12 leading-tight">
-            What I work with.
-          </h2>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {skills.map((skill, i) => (
-            <ScrollReveal key={skill.name} delay={0.03 * i}>
-              <div className="group flex flex-col items-center gap-2.5 p-4 rounded-xl glass-card glow-hover min-w-0">
+function BentoGrid() {
+  return (
+    <div className="skills-bento">
+      {skillGroups.map((group, groupIndex) => (
+        <article className={`skills-bento-card skills-bento-card-${groupIndex + 1}`} key={group.title}>
+          <span className="skills-bento-category">{group.title}</span>
+          <div className="skills-bento-tools">
+            {group.tools.map((tool) => (
+              <span className="skills-bento-tool" key={tool.name}>
                 <img
-                  src={"https://skillicons.dev/icons?i=" + skill.icon}
-                  alt={skill.name}
-                  width={36}
-                  height={36}
+                  src={`https://skillicons.dev/icons?i=${tool.icon}`}
+                  alt=""
+                  width="30"
+                  height="30"
                   loading="lazy"
                   decoding="async"
-                  className="shrink-0 group-hover:scale-110 transition-transform duration-200"
                 />
-                <span className="w-full text-[11px] sm:text-xs text-muted-foreground font-medium text-center leading-snug break-words group-hover:text-foreground transition-colors">
-                  {skill.name}
-                </span>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+                {tool.name}
+              </span>
+            ))}
+          </div>
+          <span className="skills-bento-number">0{groupIndex + 1}</span>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function Ticker() {
+  return (
+    <div className="skills-ticker-wrap">
+      <div className="skills-ticker" aria-label="Technologies: Python, JavaScript, C, SQL, React, HTML5, CSS3, Django, Flask, Docker, Git, GitHub">
+        {[0, 1].map((row) => (
+          <div className={`skills-ticker-track skills-ticker-track-${row + 1}`} key={row}>
+            {[...allSkills, ...allSkills].map((skill, index) => (
+              <span className="skills-ticker-item" aria-hidden={index >= allSkills.length} key={`${row}-${index}`}>
+                {skill.name}
+                <span className="skills-ticker-separator" aria-hidden="true">✳</span>
+              </span>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MinimalList() {
+  return (
+    <div className="skills-minimal-list">
+      {skillGroups.map((group, index) => (
+        <article className="skills-minimal-row" key={group.title}>
+          <span className="skills-minimal-number">0{index + 1}</span>
+          <h3>{group.title}</h3>
+          <p>{group.tools.map((tool) => tool.name).join("  ·  ")}</p>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+export const SkillsSection = () => {
+  const [layout, setLayout] = useState("bento");
+
+  return (
+    <section id="skills" className="skills-section">
+      <div className="section-wrap">
+        <ScrollReveal>
+          <div className="skills-section-top">
+            <div className="section-heading">
+              <p className="eyebrow">The toolkit</p>
+              <h2 className="section-title">Tools I reach for.</h2>
+              <p className="section-description">
+                Pick a layout to explore the languages, frameworks, and tools I use.
+              </p>
+            </div>
+            <div className="skills-layout-picker" role="group" aria-label="Choose skills display style">
+              {layouts.map((option) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  className={layout === option.id ? "is-selected" : ""}
+                  aria-pressed={layout === option.id}
+                  onClick={() => setLayout(option.id)}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal key={layout} className="skills-layout-preview">
+          {layout === "logo-grid" && <LogoGrid />}
+          {layout === "bento" && <BentoGrid />}
+          {layout === "ticker" && <Ticker />}
+          {layout === "minimal" && <MinimalList />}
+        </ScrollReveal>
       </div>
     </section>
   );

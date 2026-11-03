@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" fill="none">
+  <defs>
+    <linearGradient id="background" x1="120" y1="0" x2="1280" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F5EE"/>
+      <stop offset="1" stop-color="#E9EBDF"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="84" y1="145" x2="1320" y2="537" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#183D31"/>
+      <stop offset="1" stop-color="#456C4D"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="830" y1="170" x2="1110" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9C27E"/>
+      <stop offset=".54" stop-color="#598153"/>
+      <stop offset="1" stop-color="#315D43"/>
+    </linearGradient>
+    <linearGradient id="leaf2" x1="1020" y1="180" x2="1220" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9D38A"/>
+      <stop offset="1" stop-color="#53784C"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#283A2C" flood-opacity=".1"/>
+    </filter>
+  </defs>
+  <title>Paradise Nursery — indoor plant shop</title>
+  <desc>A contemporary plant store featuring curated plant collections, product cards, and shopping controls.</desc>
+  <rect width="1440" height="960" rx="28" fill="url(#background)"/>
+  <rect x="34" y="30" width="1372" height="900" rx="22" fill="#FAFAF5"/>
+  <rect x="34" y="30" width="1372" height="78" rx="22" fill="#FAFAF5"/>
+  <path d="M34 86a22 22 0 0 0 22 22h1328a22 22 0 0 0 22-22" fill="#FAFAF5"/>
+  <circle cx="87" cy="69" r="22" fill="#E8EEE2"/>
+  <path d="M87 49c14 9 15 24 0 39-15-15-14-30 0-39z" stroke="#547957" stroke-width="1.8"/>
+  <path d="M87 57v27" stroke="#547957" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="123" y="67" fill="#233B2E" font-family="Georgia,serif" font-size="21" font-style="italic" font-weight="700">Paradise Nursery</text>
+  <text x="124" y="86" fill="#849080" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">WHERE GREEN MEETS SERENITY</text>
+  <text x="1008" y="75" fill="#52634F" font-family="Arial,sans-serif" font-size="14">Plants</text>
+  <text x="1092" y="75" fill="#52634F" font-family="Arial,sans-serif" font-size="14">Collections</text>
+  <text x="1208" y="75" fill="#52634F" font-family="Arial,sans-serif" font-size="14">Our story</text>
+  <circle cx="1326" cy="69" r="21" fill="#EEF1E8"/>
+  <path d="M1318 59h4l4 16h13l4-12h-18" stroke="#42604A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1327" cy="79" r="2" fill="#42604A"/><circle cx="1337" cy="79" r="2" fill="#42604A"/>
+  <circle cx="1344" cy="52" r="10" fill="#BD9955"/>
+  <text x="1341" y="56" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">2</text>
+  <rect x="64" y="132" width="1312" height="356" rx="20" fill="url(#hero)"/>
+  <circle cx="1140" cy="315" r="234" fill="#D9E5BB" opacity=".06"/>
+  <circle cx="1210" cy="219" r="133" fill="#E9D1A2" opacity=".05"/>
+  <text x="116" y="213" fill="#D5DDBD" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">BRING A LITTLE NATURE HOME</text>
+  <text x="111" y="278" fill="#FBF8EE" font-family="Georgia,serif" font-size="47" font-style="italic" font-weight="700">Make room for</text>
+  <text x="111" y="335" fill="#FBF8EE" font-family="Georgia,serif" font-size="47" font-style="italic" font-weight="700">something green.</text>
+  <text x="115" y="375" fill="#D4DFD0" font-family="Arial,sans-serif" font-size="15">Thoughtfully chosen plants to make your space feel alive.</text>
+  <rect x="112" y="405" width="165" height="48" rx="24" fill="#D8BD83"/>
+  <text x="140" y="435" fill="#264330" font-family="Arial,sans-serif" font-size="13" font-weight="700">Shop the collection</text>
+  <path d="M941 417c45-51 63-126 22-214 86 43 112 125 76 213" fill="url(#leaf)"/>
+  <path d="M960 413c31-70 43-128 22-200m-15 148 45-59m-53 20 52-67" stroke="#D5E4B8" stroke-width="2.2" opacity=".7"/>
+  <path d="M1056 420c-30-65-30-150 27-234 51 77 48 164 5 234" fill="url(#leaf2)"/>
+  <path d="M1072 417c17-85 20-142 11-214m1 151-37-64m41 21 29-65" stroke="#E8E8BE" stroke-width="2.2" opacity=".75"/>
+  <path d="M1142 419c5-70 46-143 134-174-6 92-53 153-116 186" fill="url(#leaf)"/>
+  <path d="M1157 422c45-68 80-112 109-155m-79 112 4-76m22 42 46-34" stroke="#D5E4B8" stroke-width="2.2" opacity=".72"/>
+  <path d="M842 422c-4-66-43-133-123-164 5 85 48 142 106 174" fill="url(#leaf2)"/>
+  <path d="M835 424c-39-62-72-103-99-143m67 106-2-70m-19 38-42-30" stroke="#E8E8BE" stroke-width="2.2" opacity=".72"/>
+  <path d="M1026 401h164l-18 83c-3 15-15 25-31 25h-67c-16 0-28-10-31-25l-17-83z" fill="#D8BE94"/>
+  <path d="M1034 423h148" stroke="#C1A574" stroke-width="4" opacity=".8"/>
+  <ellipse cx="1108" cy="400" rx="86" ry="15" fill="#6F9470"/>
+  <text x="86" y="548" fill="#293D2D" font-family="Georgia,serif" font-size="25" font-weight="700">Find your kind of green</text>
+  <text x="86" y="576" fill="#788276" font-family="Arial,sans-serif" font-size="14">Easy-care favorites, selected to thrive in your home.</text>
+  <text x="1261" y="564" fill="#64745F" font-family="Arial,sans-serif" font-size="13" font-weight="600">View all plants  →</text>
+  <g filter="url(#shadow)">
+    <rect x="86" y="604" width="392" height="242" rx="16" fill="#fff" stroke="#E5E8DD"/>
+    <rect x="524" y="604" width="392" height="242" rx="16" fill="#fff" stroke="#E5E8DD"/>
+    <rect x="962" y="604" width="392" height="242" rx="16" fill="#fff" stroke="#E5E8DD"/>
+  </g>
+  <rect x="102" y="620" width="155" height="210" rx="12" fill="#ECF0E7"/>
+  <path d="M174 795c-17-51-21-115 0-158 27 35 33 99 0 158z" fill="#658A54"/>
+  <path d="M171 788c-34-40-57-89-47-128 42 20 62 70 57 124z" fill="#8BA66B"/>
+  <path d="M176 788c29-42 54-91 46-128-39 21-60 70-55 124z" fill="#466F4A"/>
+  <path d="M172 787v-120m-1 75-28-42m29 19 27-40" stroke="#D8E4C0" stroke-width="2"/>
+  <path d="M138 777h69l-8 43c-2 9-9 14-18 14h-17c-9 0-16-5-18-14l-8-43z" fill="#C68B65"/>
+  <path d="M142 789h61" stroke="#AD7152" stroke-width="3"/>
+  <rect x="278" y="632" width="65" height="23" rx="12" fill="#E8F0E7"/>
+  <text x="291" y="648" fill="#547B53" font-family="Arial,sans-serif" font-size="9" font-weight="700">EASY CARE</text>
+  <text x="278" y="690" fill="#293D2D" font-family="Georgia,serif" font-size="20" font-weight="700">Snake Plant</text>
+  <text x="278" y="715" fill="#7B867A" font-family="Arial,sans-serif" font-size="12">A resilient favorite for any room.</text>
+  <text x="278" y="771" fill="#315B3D" font-family="Arial,sans-serif" font-size="17" font-weight="700">$15</text>
+  <circle cx="423" cy="775" r="21" fill="#3D7050"/>
+  <path d="M423 764v22m-8-11h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="540" y="620" width="155" height="210" rx="12" fill="#E9EFE4"/>
+  <path d="M618 795c-22-39-24-94 1-140 31 30 39 88 8 139z" fill="#74966A"/>
+  <path d="M614 788c-42-24-73-67-71-104 44 6 79 42 81 94z" fill="#A2B37A"/>
+  <path d="M618 788c34-32 58-72 49-109-40 12-66 53-61 101z" fill="#597E56"/>
+  <path d="M619 787v-109m-1 76-42-43m43 28 36-49" stroke="#E1E9CC" stroke-width="2"/>
+  <path d="M581 777h72l-8 43c-2 9-9 14-18 14h-20c-9 0-16-5-18-14l-8-43z" fill="#D3B17E"/>
+  <path d="M585 789h64" stroke="#B99560" stroke-width="3"/>
+  <rect x="716" y="632" width="78" height="23" rx="12" fill="#F6EDDC"/>
+  <text x="728" y="648" fill="#9A7741" font-family="Arial,sans-serif" font-size="9" font-weight="700">PET FRIENDLY</text>
+  <text x="716" y="690" fill="#293D2D" font-family="Georgia,serif" font-size="20" font-weight="700">Spider Plant</text>
+  <text x="716" y="715" fill="#7B867A" font-family="Arial,sans-serif" font-size="12">Colorful leaves, gentle nature.</text>
+  <text x="716" y="771" fill="#315B3D" font-family="Arial,sans-serif" font-size="17" font-weight="700">$12</text>
+  <circle cx="861" cy="775" r="21" fill="#3D7050"/>
+  <path d="M861 764v22m-8-11h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="978" y="620" width="155" height="210" rx="12" fill="#E8EEE4"/>
+  <path d="M1055 795c-18-53-14-104 17-149 26 45 24 100-4 148z" fill="#527D50"/>
+  <path d="M1064 784c-37-29-61-75-52-108 43 14 67 53 60 102z" fill="#78965E"/>
+  <path d="M1067 779c31-29 54-72 45-104-39 11-62 49-57 96z" fill="#3E6947"/>
+  <path d="M1059 786v-113m0 80-34-47m34 26 34-48" stroke="#E3EACB" stroke-width="2"/>
+  <path d="M1022 777h72l-8 43c-2 9-9 14-18 14h-20c-9 0-16-5-18-14l-8-43z" fill="#B87F68"/>
+  <path d="M1026 789h64" stroke="#9F6654" stroke-width="3"/>
+  <rect x="1154" y="632" width="72" height="23" rx="12" fill="#E8F0E7"/>
+  <text x="1167" y="648" fill="#547B53" font-family="Arial,sans-serif" font-size="9" font-weight="700">BESTSELLER</text>
+  <text x="1154" y="690" fill="#293D2D" font-family="Georgia,serif" font-size="20" font-weight="700">Peace Lily</text>
+  <text x="1154" y="715" fill="#7B867A" font-family="Arial,sans-serif" font-size="12">A calm touch with elegant blooms.</text>
+  <text x="1154" y="771" fill="#315B3D" font-family="Arial,sans-serif" font-size="17" font-weight="700">$18</text>
+  <circle cx="1299" cy="775" r="21" fill="#3D7050"/>
+  <path d="M1299 764v22m-8-11h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="86" y="894" fill="#97A08E" font-family="Arial,sans-serif" font-size="11">PARADISE NURSERY · GROW A LITTLE HAPPIER</text>
+</svg>

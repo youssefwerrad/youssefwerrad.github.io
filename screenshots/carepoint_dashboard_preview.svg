@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" fill="none">
+  <defs>
+    <linearGradient id="background" x1="120" y1="0" x2="1300" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F8F7"/>
+      <stop offset="1" stop-color="#ECF3F1"/>
+    </linearGradient>
+    <linearGradient id="sidebar" x1="50" y1="0" x2="330" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214D45"/>
+      <stop offset="1" stop-color="#183A35"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#28483F" flood-opacity=".07"/>
+    </filter>
+  </defs>
+  <title>CarePoint — doctor appointment dashboard</title>
+  <desc>A modern healthcare dashboard with weekly appointments, patient information, and clinic navigation.</desc>
+  <rect width="1440" height="960" rx="28" fill="url(#background)"/>
+  <rect x="34" y="30" width="1372" height="900" rx="22" fill="#F8FAF9"/>
+  <rect x="34" y="30" width="250" height="900" rx="22" fill="url(#sidebar)"/>
+  <path d="M262 30h22v878a22 22 0 0 1-22 22V30z" fill="#183A35"/>
+  <circle cx="79" cy="82" r="25" fill="#D6EEE4" opacity=".14"/>
+  <path d="M79 67v30m-15-15h30" stroke="#C1E5D3" stroke-width="4" stroke-linecap="round"/>
+  <text x="116" y="90" fill="#F1F8F4" font-family="Arial,sans-serif" font-size="24" font-weight="700">CarePoint</text>
+  <text x="60" y="158" fill="#8CB3A5" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">WORKSPACE</text>
+  <rect x="51" y="179" width="216" height="48" rx="12" fill="#D5EDE2" opacity=".14"/>
+  <rect x="51" y="179" width="4" height="48" rx="2" fill="#91CEB1"/>
+  <rect x="69" y="194" width="17" height="17" rx="4" stroke="#E1F2E9" stroke-width="1.7"/>
+  <path d="M73 198h9m-9 5h9m-9 4h6" stroke="#E1F2E9" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="101" y="209" fill="#F2F8F4" font-family="Arial,sans-serif" font-size="14" font-weight="700">Overview</text>
+  <g fill="#B1C9BF" font-family="Arial,sans-serif" font-size="14">
+    <rect x="70" y="254" width="17" height="17" rx="4" stroke="#91B0A3" stroke-width="1.5"/>
+    <path d="M74 262h9m-5-5v10" stroke="#91B0A3" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="101" y="268">Appointments</text>
+    <circle cx="78" cy="315" r="8" stroke="#91B0A3" stroke-width="1.5"/>
+    <path d="M65 334c1-8 6-12 13-12s12 4 13 12" stroke="#91B0A3" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="101" y="320">Patients</text>
+    <path d="M70 370h17v17H70z" stroke="#91B0A3" stroke-width="1.5"/>
+    <path d="M74 375h9m-9 4h9m-9 4h6" stroke="#91B0A3" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="101" y="384">Availability</text>
+  </g>
+  <text x="60" y="458" fill="#8CB3A5" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">ACCOUNT</text>
+  <circle cx="80" cy="510" r="17" fill="#D4E7DD"/>
+  <text x="72" y="515" fill="#2B5847" font-family="Arial,sans-serif" font-size="12" font-weight="700">SC</text>
+  <text x="109" y="507" fill="#F2F8F4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Sarah Chen</text>
+  <text x="109" y="527" fill="#9EBCAF" font-family="Arial,sans-serif" font-size="11">Doctor</text>
+  <path d="M61 877h194" stroke="#D5EDE2" opacity=".17"/>
+  <circle cx="80" cy="900" r="12" fill="#D4E7DD" opacity=".16"/>
+  <path d="M76 900h8m-4-4v8" stroke="#CEE9DA" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="102" y="904" fill="#B1C9BF" font-family="Arial,sans-serif" font-size="12">Help &amp; support</text>
+  <text x="324" y="72" fill="#7B8C83" font-family="Arial,sans-serif" font-size="12">Monday, August 10, 2026</text>
+  <text x="324" y="115" fill="#20362D" font-family="Arial,sans-serif" font-size="28" font-weight="700">Good morning, Dr. Chen</text>
+  <text x="324" y="143" fill="#829188" font-family="Arial,sans-serif" font-size="14">Here’s your clinic at a glance.</text>
+  <circle cx="1292" cy="83" r="22" fill="#fff" stroke="#E1E9E4"/>
+  <path d="M1285 85c0-6 2-10 7-11 5 1 7 5 7 11l3 4h-20l3-4zm5 8a3 3 0 0 0 5 0" stroke="#6E8277" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1347" cy="83" r="22" fill="#DCEBE2"/>
+  <text x="1335" y="88" fill="#32674F" font-family="Arial,sans-serif" font-size="12" font-weight="700">SC</text>
+  <g filter="url(#shadow)">
+    <rect x="324" y="176" width="319" height="129" rx="16" fill="#fff" stroke="#E3EBE6"/>
+    <rect x="661" y="176" width="319" height="129" rx="16" fill="#fff" stroke="#E3EBE6"/>
+    <rect x="998" y="176" width="344" height="129" rx="16" fill="#fff" stroke="#E3EBE6"/>
+  </g>
+  <circle cx="367" cy="220" r="22" fill="#E5F2EA"/>
+  <path d="M367 208v24m-12-12h24" stroke="#3E795D" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="403" y="218" fill="#77877D" font-family="Arial,sans-serif" font-size="13">Today's appointments</text>
+  <text x="355" y="274" fill="#20362D" font-family="Arial,sans-serif" font-size="34" font-weight="700">8</text>
+  <text x="397" y="273" fill="#3C8160" font-family="Arial,sans-serif" font-size="12" font-weight="600">+2 from yesterday</text>
+  <circle cx="704" cy="220" r="22" fill="#E9EDF7"/>
+  <circle cx="704" cy="218" r="7" stroke="#6179AB" stroke-width="1.8"/>
+  <path d="M692 237c1-8 5-12 12-12s11 4 12 12" stroke="#6179AB" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="740" y="218" fill="#77877D" font-family="Arial,sans-serif" font-size="13">Active patients</text>
+  <text x="692" y="274" fill="#20362D" font-family="Arial,sans-serif" font-size="34" font-weight="700">124</text>
+  <text x="763" y="273" fill="#6179AB" font-family="Arial,sans-serif" font-size="12" font-weight="600">Across 4 doctors</text>
+  <circle cx="1041" cy="220" r="22" fill="#FBF0DD"/>
+  <path d="M1041 206v15l10 6" stroke="#B78742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1041" cy="220" r="12" stroke="#B78742" stroke-width="1.8"/>
+  <text x="1077" y="218" fill="#77877D" font-family="Arial,sans-serif" font-size="13">Next appointment</text>
+  <text x="1029" y="273" fill="#20362D" font-family="Arial,sans-serif" font-size="29" font-weight="700">09:00 AM</text>
+  <text x="1180" y="273" fill="#78877E" font-family="Arial,sans-serif" font-size="12">Maria G.</text>
+  <rect x="324" y="332" width="1018" height="552" rx="18" fill="#fff" stroke="#E2EAE5"/>
+  <text x="354" y="376" fill="#20362D" font-family="Arial,sans-serif" font-size="21" font-weight="700">This week’s schedule</text>
+  <text x="354" y="402" fill="#87958C" font-family="Arial,sans-serif" font-size="13">August 10 – 16, 2026</text>
+  <rect x="1111" y="350" width="98" height="38" rx="10" fill="#F5F8F5" stroke="#E3EBE6"/>
+  <text x="1130" y="374" fill="#54665B" font-family="Arial,sans-serif" font-size="12">This week</text>
+  <rect x="1219" y="350" width="94" height="38" rx="10" fill="#32674F"/>
+  <text x="1236" y="374" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">+ New visit</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="352" y="428" width="126" height="414" rx="12" fill="#F1F7F3" stroke="#9ABBA6" stroke-width="1.5"/>
+    <rect x="491" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <rect x="630" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <rect x="769" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <rect x="908" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <rect x="1047" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <rect x="1186" y="428" width="126" height="414" rx="12" fill="#F7F9F7" stroke="#E4EBE6"/>
+    <text x="370" y="459" fill="#387255" font-size="13" font-weight="700">MON</text><text x="369" y="481" fill="#283C31" font-size="12">10 AUG</text>
+    <text x="509" y="459" fill="#718077" font-size="13" font-weight="700">TUE</text><text x="508" y="481" fill="#283C31" font-size="12">11 AUG</text>
+    <text x="648" y="459" fill="#718077" font-size="13" font-weight="700">WED</text><text x="647" y="481" fill="#283C31" font-size="12">12 AUG</text>
+    <text x="787" y="459" fill="#718077" font-size="13" font-weight="700">THU</text><text x="786" y="481" fill="#283C31" font-size="12">13 AUG</text>
+    <text x="926" y="459" fill="#718077" font-size="13" font-weight="700">FRI</text><text x="925" y="481" fill="#283C31" font-size="12">14 AUG</text>
+    <text x="1065" y="459" fill="#718077" font-size="13" font-weight="700">SAT</text><text x="1064" y="481" fill="#283C31" font-size="12">15 AUG</text>
+    <text x="1204" y="459" fill="#718077" font-size="13" font-weight="700">SUN</text><text x="1203" y="481" fill="#283C31" font-size="12">16 AUG</text>
+  </g>
+  <rect x="365" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="365" y="502" width="4" height="90" rx="2" fill="#74A586"/>
+  <text x="379" y="525" fill="#37674C" font-family="Arial,sans-serif" font-size="11" font-weight="700">09:00</text>
+  <text x="379" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Maria</text>
+  <text x="379" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Gonzalez</text>
+  <rect x="365" y="602" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="365" y="602" width="4" height="90" rx="2" fill="#74A586"/>
+  <text x="379" y="625" fill="#37674C" font-family="Arial,sans-serif" font-size="11" font-weight="700">11:30</text>
+  <text x="379" y="647" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">James</text>
+  <text x="379" y="665" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Okafor</text>
+  <rect x="504" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="504" y="502" width="4" height="90" rx="2" fill="#8D9CC2"/>
+  <text x="518" y="525" fill="#6077A0" font-family="Arial,sans-serif" font-size="11" font-weight="700">10:00</text>
+  <text x="518" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Liam</text>
+  <text x="518" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Fischer</text>
+  <rect x="643" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="643" y="502" width="4" height="90" rx="2" fill="#D3A85B"/>
+  <text x="657" y="525" fill="#A87D38" font-family="Arial,sans-serif" font-size="11" font-weight="700">09:00</text>
+  <text x="657" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Aiko</text>
+  <text x="657" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Tanaka</text>
+  <rect x="643" y="602" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="643" y="602" width="4" height="90" rx="2" fill="#D3A85B"/>
+  <text x="657" y="625" fill="#A87D38" font-family="Arial,sans-serif" font-size="11" font-weight="700">14:00</text>
+  <text x="657" y="647" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Noah</text>
+  <text x="657" y="665" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Silva</text>
+  <rect x="782" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="782" y="502" width="4" height="90" rx="2" fill="#8D9CC2"/>
+  <text x="796" y="525" fill="#6077A0" font-family="Arial,sans-serif" font-size="11" font-weight="700">13:00</text>
+  <text x="796" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">James</text>
+  <text x="796" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Okafor</text>
+  <rect x="921" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="921" y="502" width="4" height="90" rx="2" fill="#74A586"/>
+  <text x="935" y="525" fill="#37674C" font-family="Arial,sans-serif" font-size="11" font-weight="700">10:30</text>
+  <text x="935" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Liam</text>
+  <text x="935" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Fischer</text>
+  <rect x="921" y="602" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="921" y="602" width="4" height="90" rx="2" fill="#D3A85B"/>
+  <text x="935" y="625" fill="#A87D38" font-family="Arial,sans-serif" font-size="11" font-weight="700">16:00</text>
+  <text x="935" y="647" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Aiko</text>
+  <text x="935" y="665" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Tanaka</text>
+  <rect x="1060" y="502" width="100" height="90" rx="9" fill="#fff" stroke="#E2EAE5"/>
+  <rect x="1060" y="502" width="4" height="90" rx="2" fill="#8D9CC2"/>
+  <text x="1074" y="525" fill="#6077A0" font-family="Arial,sans-serif" font-size="11" font-weight="700">10:00</text>
+  <text x="1074" y="547" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12" font-weight="600">Noah</text>
+  <text x="1074" y="565" fill="#2B3E33" font-family="Arial,sans-serif" font-size="12">Silva</text>
+  <text x="1210" y="539" fill="#849188" font-family="Arial,sans-serif" font-size="12">No visits</text>
+  <text x="1210" y="558" fill="#849188" font-family="Arial,sans-serif" font-size="12">scheduled</text>
+  <text x="324" y="911" fill="#98A69E" font-family="Arial,sans-serif" font-size="11">CAREPOINT · YOUR CLINIC, IN SYNC</text>
+</svg>

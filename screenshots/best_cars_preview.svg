@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="0" x2="1300" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7F5"/>
+      <stop offset="1" stop-color="#E9EFEC"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="180" y1="145" x2="1230" y2="485" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12251F"/>
+      <stop offset="1" stop-color="#29483D"/>
+    </linearGradient>
+    <linearGradient id="car" x1="600" y1="240" x2="1180" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6B967"/>
+      <stop offset="1" stop-color="#C37B3D"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <title>Best Cars — dealership reviews</title>
+  <desc>A modern dealership review site with dealer search, rating summaries, and featured listings.</desc>
+  <rect width="1440" height="960" rx="28" fill="url(#bg)"/>
+  <rect x="34" y="30" width="1372" height="900" rx="22" fill="#FBFCFA"/>
+  <rect x="34" y="30" width="1372" height="82" rx="22" fill="#fff"/>
+  <path d="M34 90a22 22 0 0 0 22 22h1328a22 22 0 0 0 22-22" fill="#fff"/>
+  <circle cx="91" cy="71" r="23" fill="#E8F0EB"/>
+  <path d="M80 76h22m-19-9 8-8 8 8m-8-8v22" stroke="#32674F" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="128" y="78" fill="#19352A" font-family="Arial,sans-serif" font-size="24" font-weight="700">BEST CARS</text>
+  <text x="923" y="76" fill="#62746A" font-family="Arial,sans-serif" font-size="15">Explore</text>
+  <text x="1015" y="76" fill="#62746A" font-family="Arial,sans-serif" font-size="15">Top rated</text>
+  <text x="1127" y="76" fill="#62746A" font-family="Arial,sans-serif" font-size="15">About</text>
+  <rect x="1220" y="49" width="130" height="43" rx="22" fill="#286044"/>
+  <text x="1244" y="76" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Sign in</text>
+  <rect x="64" y="138" width="1312" height="345" rx="20" fill="url(#hero)"/>
+  <circle cx="1195" cy="208" r="172" fill="#47725D" opacity=".19"/>
+  <circle cx="1268" cy="406" r="123" fill="#D6A75D" opacity=".09"/>
+  <text x="114" y="211" fill="#D8B978" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">DRIVE WITH CONFIDENCE</text>
+  <text x="111" y="278" fill="#F8FAF7" font-family="Arial,sans-serif" font-size="47" font-weight="700">Find a dealer</text>
+  <text x="111" y="333" fill="#F8FAF7" font-family="Arial,sans-serif" font-size="47" font-weight="700">worth the drive.</text>
+  <text x="114" y="373" fill="#BDCDC3" font-family="Arial,sans-serif" font-size="17">Real reviews. Trusted local dealerships.</text>
+  <rect x="110" y="407" width="429" height="52" rx="11" fill="#fff"/>
+  <circle cx="138" cy="433" r="8" stroke="#55806A" stroke-width="2"/>
+  <path d="m144 439 7 7" stroke="#55806A" stroke-width="2" stroke-linecap="round"/>
+  <text x="166" y="438" fill="#7B8A81" font-family="Arial,sans-serif" font-size="14">Dealer name, city, or state</text>
+  <rect x="551" y="407" width="108" height="52" rx="11" fill="#D9B66F"/>
+  <text x="575" y="438" fill="#1C3328" font-family="Arial,sans-serif" font-size="14" font-weight="700">Search</text>
+  <ellipse cx="1018" cy="433" rx="256" ry="15" fill="#08150F" opacity=".35" filter="url(#shadow)"/>
+  <path d="M751 389c35-21 77-41 136-46l56-60c13-14 29-20 50-20h89c23 0 43 12 57 31l46 61c33 6 54 22 60 51l7 35c2 11-7 21-18 21h-37c-5-31-30-53-62-53-31 0-57 22-62 53H888c-5-31-30-53-62-53s-57 22-62 53h-32c-11 0-18-10-15-20l9-35c3-8 11-14 25-18z" fill="url(#car)"/>
+  <path d="m960 294-48 54h217l-35-54c-8-11-18-17-33-17h-69c-13 0-23 5-32 17z" fill="#B7D1C4" opacity=".94"/>
+  <path d="m928 348 33-38m31-33-10 71m63-71 30 71" stroke="#D8E6DF" stroke-width="3" opacity=".65"/>
+  <path d="M790 383h370" stroke="#F8E3B7" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+  <circle cx="826" cy="462" r="31" fill="#1A2821"/>
+  <circle cx="826" cy="462" r="15" fill="#BBC8BF"/>
+  <circle cx="1105" cy="462" r="31" fill="#1A2821"/>
+  <circle cx="1105" cy="462" r="15" fill="#BBC8BF"/>
+  <text x="86" y="541" fill="#1C3328" font-family="Arial,sans-serif" font-size="24" font-weight="700">Find your next dealership</text>
+  <text x="86" y="570" fill="#77867D" font-family="Arial,sans-serif" font-size="14">Compare trusted dealers, backed by real customer experiences.</text>
+  <rect x="86" y="604" width="404" height="244" rx="16" fill="#fff" stroke="#E3EAE5"/>
+  <rect x="508" y="604" width="404" height="244" rx="16" fill="#fff" stroke="#E3EAE5"/>
+  <rect x="930" y="604" width="404" height="244" rx="16" fill="#fff" stroke="#E3EAE5"/>
+  <rect x="110" y="630" width="56" height="56" rx="15" fill="#E7F1EB"/>
+  <text x="125" y="666" fill="#3D7058" font-family="Arial,sans-serif" font-size="22" font-weight="700">R</text>
+  <text x="184" y="650" fill="#24372D" font-family="Arial,sans-serif" font-size="18" font-weight="700">Riverside Auto</text>
+  <text x="184" y="674" fill="#78877E" font-family="Arial,sans-serif" font-size="13">Austin, Texas</text>
+  <text x="110" y="727" fill="#D39D3D" font-family="Arial,sans-serif" font-size="20">★★★★★</text>
+  <text x="234" y="727" fill="#2E4237" font-family="Arial,sans-serif" font-size="15" font-weight="700">4.8</text>
+  <text x="269" y="727" fill="#78877E" font-family="Arial,sans-serif" font-size="13">(128 reviews)</text>
+  <path d="M110 751h355" stroke="#E8ECE8"/>
+  <text x="110" y="784" fill="#52645A" font-family="Arial,sans-serif" font-size="13">Friendly service, clear pricing, and a</text>
+  <text x="110" y="806" fill="#52645A" font-family="Arial,sans-serif" font-size="13">great selection of vehicles.</text>
+  <rect x="532" y="630" width="56" height="56" rx="15" fill="#F6EDDF"/>
+  <text x="547" y="666" fill="#B3823D" font-family="Arial,sans-serif" font-size="22" font-weight="700">L</text>
+  <text x="606" y="650" fill="#24372D" font-family="Arial,sans-serif" font-size="18" font-weight="700">Lone Star Motors</text>
+  <text x="606" y="674" fill="#78877E" font-family="Arial,sans-serif" font-size="13">Houston, Texas</text>
+  <text x="532" y="727" fill="#D39D3D" font-family="Arial,sans-serif" font-size="20">★★★★★</text>
+  <text x="656" y="727" fill="#2E4237" font-family="Arial,sans-serif" font-size="15" font-weight="700">4.7</text>
+  <text x="691" y="727" fill="#78877E" font-family="Arial,sans-serif" font-size="13">(96 reviews)</text>
+  <path d="M532 751h355" stroke="#E8ECE8"/>
+  <text x="532" y="784" fill="#52645A" font-family="Arial,sans-serif" font-size="13">Knowledgeable team and an easy</text>
+  <text x="532" y="806" fill="#52645A" font-family="Arial,sans-serif" font-size="13">buying experience from start to finish.</text>
+  <rect x="954" y="630" width="56" height="56" rx="15" fill="#E9EDF5"/>
+  <text x="969" y="666" fill="#6078A5" font-family="Arial,sans-serif" font-size="22" font-weight="700">P</text>
+  <text x="1028" y="650" fill="#24372D" font-family="Arial,sans-serif" font-size="18" font-weight="700">Pacific Coast Auto</text>
+  <text x="1028" y="674" fill="#78877E" font-family="Arial,sans-serif" font-size="13">San Diego, California</text>
+  <text x="954" y="727" fill="#D39D3D" font-family="Arial,sans-serif" font-size="20">★★★★★</text>
+  <text x="1078" y="727" fill="#2E4237" font-family="Arial,sans-serif" font-size="15" font-weight="700">4.6</text>
+  <text x="1113" y="727" fill="#78877E" font-family="Arial,sans-serif" font-size="13">(74 reviews)</text>
+  <path d="M954 751h355" stroke="#E8ECE8"/>
+  <text x="954" y="784" fill="#52645A" font-family="Arial,sans-serif" font-size="13">Helpful staff, a relaxed test drive,</text>
+  <text x="954" y="806" fill="#52645A" font-family="Arial,sans-serif" font-size="13">and no pressure to make a decision.</text>
+  <text x="86" y="894" fill="#97A39B" font-family="Arial,sans-serif" font-size="12">DEALER REVIEWS · COMMUNITY-POWERED RATINGS</text>
+</svg>

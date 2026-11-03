@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" fill="none">
+  <defs>
+    <linearGradient id="page" x1="120" y1="0" x2="1290" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F8F4"/>
+      <stop offset="1" stop-color="#EDF2EC"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="80" y1="100" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142820"/>
+      <stop offset="1" stop-color="#2D5541"/>
+    </linearGradient>
+    <linearGradient id="cover1" x1="280" y1="570" x2="425" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9B653"/>
+      <stop offset="1" stop-color="#BD7048"/>
+    </linearGradient>
+    <linearGradient id="cover2" x1="590" y1="570" x2="735" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#90B8A0"/>
+      <stop offset="1" stop-color="#47745C"/>
+    </linearGradient>
+    <linearGradient id="cover3" x1="900" y1="570" x2="1045" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D39A9B"/>
+      <stop offset="1" stop-color="#8E5363"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#19271F" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <title>Book Reviews — discover and review books</title>
+  <desc>A modern book discovery page with search, genre filters, popular titles, and reader ratings.</desc>
+  <rect width="1440" height="960" rx="28" fill="url(#page)"/>
+  <rect x="34" y="30" width="1372" height="900" rx="22" fill="#FBFCF9"/>
+  <rect x="34" y="30" width="1372" height="76" rx="22" fill="#FBFCF9"/>
+  <path d="M34 84a22 22 0 0 0 22 22h1328a22 22 0 0 0 22-22" fill="#FBFCF9"/>
+  <circle cx="92" cy="68" r="22" fill="#E8F0E9"/>
+  <path d="M82 57h9c4 0 7 3 7 7v17c0-4-3-7-7-7h-9V57zm26 0h-9v24c0-4 3-7 7-7h9V57h-7z" stroke="#32674F" stroke-width="2" stroke-linejoin="round"/>
+  <text x="128" y="75" fill="#1C3328" font-family="Arial,sans-serif" font-size="21" font-weight="700">Book Reviews</text>
+  <text x="1015" y="73" fill="#748078" font-family="Arial,sans-serif" font-size="14">Discover</text>
+  <text x="1111" y="73" fill="#748078" font-family="Arial,sans-serif" font-size="14">My reviews</text>
+  <rect x="1233" y="47" width="126" height="41" rx="21" fill="#35694F"/>
+  <text x="1257" y="73" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Log in</text>
+  <rect x="64" y="130" width="1312" height="350" rx="20" fill="url(#hero)"/>
+  <circle cx="1202" cy="202" r="194" fill="#A9C5A5" opacity=".08"/>
+  <circle cx="1225" cy="427" r="123" fill="#C5A46B" opacity=".08"/>
+  <text x="720" y="193" text-anchor="middle" fill="#C7D6C9" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">A LITTLE MORE MAGIC, ONE PAGE AT A TIME</text>
+  <text x="720" y="253" text-anchor="middle" fill="#F6F7F2" font-family="Georgia,serif" font-size="47" font-weight="700">Find a story that stays with you.</text>
+  <text x="720" y="292" text-anchor="middle" fill="#C4D1C8" font-family="Arial,sans-serif" font-size="16">Search books, discover your next favorite, and share what you think.</text>
+  <rect x="326" y="323" width="788" height="61" rx="31" fill="#FCFDF9"/>
+  <circle cx="364" cy="353" r="9" stroke="#62826B" stroke-width="2"/>
+  <path d="m371 360 7 7" stroke="#62826B" stroke-width="2" stroke-linecap="round"/>
+  <text x="397" y="359" fill="#89958C" font-family="Arial,sans-serif" font-size="14">Search by title, author, or ISBN...</text>
+  <rect x="1008" y="331" width="94" height="45" rx="23" fill="#D6B771"/>
+  <text x="1032" y="359" fill="#24372B" font-family="Arial,sans-serif" font-size="13" font-weight="700">Search</text>
+  <g font-family="Arial,sans-serif" font-size="12" font-weight="600">
+    <rect x="336" y="408" width="89" height="33" rx="17" fill="#3E654F" stroke="#79927C"/><text x="358" y="429" fill="#F6F7F2">Mystery</text>
+    <rect x="435" y="408" width="82" height="33" rx="17" fill="#3E654F" stroke="#79927C"/><text x="456" y="429" fill="#F6F7F2">Fantasy</text>
+    <rect x="527" y="408" width="72" height="33" rx="17" fill="#D6B771"/><text x="544" y="429" fill="#24372B">Sci-Fi</text>
+    <rect x="609" y="408" width="86" height="33" rx="17" fill="#3E654F" stroke="#79927C"/><text x="630" y="429" fill="#F6F7F2">Romance</text>
+    <rect x="705" y="408" width="90" height="33" rx="17" fill="#3E654F" stroke="#79927C"/><text x="728" y="429" fill="#F6F7F2">Thriller</text>
+    <rect x="805" y="408" width="81" height="33" rx="17" fill="#3E654F" stroke="#79927C"/><text x="824" y="429" fill="#F6F7F2">Classics</text>
+  </g>
+  <text x="94" y="532" fill="#24372B" font-family="Arial,sans-serif" font-size="22" font-weight="700">Trending now</text>
+  <text x="94" y="556" fill="#849087" font-family="Arial,sans-serif" font-size="13">Stories readers are talking about</text>
+  <g filter="url(#shadow)">
+    <rect x="94" y="583" width="380" height="264" rx="15" fill="#fff" stroke="#E4E9E2"/>
+    <rect x="530" y="583" width="380" height="264" rx="15" fill="#fff" stroke="#E4E9E2"/>
+    <rect x="966" y="583" width="380" height="264" rx="15" fill="#fff" stroke="#E4E9E2"/>
+  </g>
+  <rect x="118" y="602" width="126" height="202" rx="7" fill="url(#cover1)"/>
+  <path d="M134 618v169" stroke="#F8DB9B" stroke-width="5" opacity=".75"/>
+  <circle cx="190" cy="676" r="30" stroke="#FFF1CE" stroke-width="2" opacity=".8"/>
+  <path d="M190 641v70m-23-35h46m-39-24 32 48m0-48-32 48" stroke="#FFF1CE" stroke-width="1.5" opacity=".6"/>
+  <text x="181" y="738" text-anchor="middle" fill="#FFF6E6" font-family="Georgia,serif" font-size="16" font-weight="700">DUNE</text>
+  <text x="181" y="760" text-anchor="middle" fill="#FFE9BC" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">FRANK HERBERT</text>
+  <text x="266" y="637" fill="#20332A" font-family="Georgia,serif" font-size="20" font-weight="700">Dune</text>
+  <text x="266" y="661" fill="#7B897F" font-family="Arial,sans-serif" font-size="13">Frank Herbert</text>
+  <text x="266" y="705" fill="#BD9250" font-family="Arial,sans-serif" font-size="16">★★★★★</text>
+  <text x="266" y="730" fill="#75847A" font-family="Arial,sans-serif" font-size="12">4.8 · 214 reviews</text>
+  <rect x="266" y="765" width="139" height="34" rx="17" fill="#EAF1EB"/>
+  <text x="286" y="787" fill="#35694F" font-family="Arial,sans-serif" font-size="12" font-weight="700">Read reviews ↗</text>
+  <rect x="554" y="602" width="126" height="202" rx="7" fill="url(#cover2)"/>
+  <path d="M570 618v169" stroke="#C9E0D0" stroke-width="5" opacity=".75"/>
+  <path d="M618 652c-15 17-17 43-1 67 15-22 16-47 1-67zm0 54-18 25m18-47 18-21m-18 39 22 2" stroke="#E0EBDC" stroke-width="2" stroke-linecap="round"/>
+  <text x="617" y="738" text-anchor="middle" fill="#F5FAF3" font-family="Georgia,serif" font-size="15" font-weight="700">THE HOBBIT</text>
+  <text x="617" y="760" text-anchor="middle" fill="#E0EBDC" font-family="Arial,sans-serif" font-size="9" letter-spacing="1">J.R.R. TOLKIEN</text>
+  <text x="702" y="637" fill="#20332A" font-family="Georgia,serif" font-size="20" font-weight="700">The Hobbit</text>
+  <text x="702" y="661" fill="#7B897F" font-family="Arial,sans-serif" font-size="13">J.R.R. Tolkien</text>
+  <text x="702" y="705" fill="#BD9250" font-family="Arial,sans-serif" font-size="16">★★★★★</text>
+  <text x="702" y="730" fill="#75847A" font-family="Arial,sans-serif" font-size="12">4.9 · 186 reviews</text>
+  <rect x="702" y="765" width="139" height="34" rx="17" fill="#EAF1EB"/>
+  <text x="722" y="787" fill="#35694F" font-family="Arial,sans-serif" font-size="12" font-weight="700">Read reviews ↗</text>
+  <rect x="990" y="602" width="126" height="202" rx="7" fill="url(#cover3)"/>
+  <path d="M1006 618v169" stroke="#F0C7BF" stroke-width="5" opacity=".75"/>
+  <circle cx="1052" cy="676" r="26" stroke="#FFE5D9" stroke-width="2" opacity=".72"/>
+  <path d="M1034 675h36m-18-18v38" stroke="#FFE5D9" stroke-width="1.5" opacity=".72"/>
+  <text x="1053" y="738" text-anchor="middle" fill="#FFF2E9" font-family="Georgia,serif" font-size="15" font-weight="700">1984</text>
+  <text x="1053" y="760" text-anchor="middle" fill="#F8D8CF" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">GEORGE ORWELL</text>
+  <text x="1138" y="637" fill="#20332A" font-family="Georgia,serif" font-size="20" font-weight="700">1984</text>
+  <text x="1138" y="661" fill="#7B897F" font-family="Arial,sans-serif" font-size="13">George Orwell</text>
+  <text x="1138" y="705" fill="#BD9250" font-family="Arial,sans-serif" font-size="16">★★★★★</text>
+  <text x="1138" y="730" fill="#75847A" font-family="Arial,sans-serif" font-size="12">4.7 · 159 reviews</text>
+  <rect x="1138" y="765" width="139" height="34" rx="17" fill="#EAF1EB"/>
+  <text x="1158" y="787" fill="#35694F" font-family="Arial,sans-serif" font-size="12" font-weight="700">Read reviews ↗</text>
+  <text x="94" y="895" fill="#94A097" font-family="Arial,sans-serif" font-size="12">DISCOVER · READ · SHARE YOUR REVIEW</text>
+</svg>

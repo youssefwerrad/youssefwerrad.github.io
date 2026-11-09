@@ -21,7 +21,7 @@ The site also supports light and dark themes; the selected theme is saved in loc
 - **Book Reviews:** book discovery and reviews using the Open Library API. [Source](https://github.com/youssefwerrad/bookreviews) · [Live demo](https://bookreviews-rwud.onrender.com/)
 - **CarePoint:** clinic management with role-based access, booking, and doctor dashboards. [Source](https://github.com/youssefwerrad/CarePoint) · [Live demo](https://carepoint-yhq2.onrender.com/login)
 
-## Tech stack
+## Portfolio site stack
 
 - React 18 and JavaScript
 - Vite 6
@@ -29,6 +29,17 @@ The site also supports light and dark themes; the selected theme is saved in loc
 - Lucide React icons
 - ESLint and Vitest
 - GitHub Pages deployment via `gh-pages`
+
+## Broader development skills
+
+The portfolio itself is built with React and Vite. My broader full-stack background also includes:
+
+- **Backend:** Python, Django, and Flask
+- **Databases:** SQL and relational database concepts
+- **Computer science:** C, algorithms, and data structures
+- **Web development:** JavaScript, HTML, and CSS
+
+Relevant coursework: **CS50x** (computer science), **CS50p** (Python), and **CS50w** (web programming). The projects above demonstrate these skills in practice, including full-stack applications and database-backed features.
 
 ## Getting started
 

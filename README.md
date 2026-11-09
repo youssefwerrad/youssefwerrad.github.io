@@ -1,32 +1,34 @@
 # Youssef Werrad | Portfolio
 
-My portfolio website showcases my work as a full-stack developer, with a focus on building polished web experiences, product-driven interfaces, and practical full-stack applications.
+Personal portfolio for Youssef Werrad, a software engineer. The site introduces my approach to building software, presents selected projects and technical skills, and provides ways to get in touch.
 
-Live site: [youssefwerrad.github.io](https://youssefwerrad.github.io)
+**Live site:** [youssefwerrad.github.io](https://youssefwerrad.github.io)
 
-## Overview
+## What’s on the site
 
-This repository contains the code for my personal portfolio built with React, Vite, and Tailwind CSS. The site highlights:
+- **Home:** introduction and links to projects and contact details.
+- **About:** an overview of my work in full-stack development, interface design, AI and machine learning, cloud deployment, and team workflows.
+- **Skills:** an interactive display of languages, frameworks, and tools, with four layout options.
+- **Projects:** a carousel featuring project descriptions, repository links, and live demos.
+- **Contact:** email, GitHub, and LinkedIn links.
 
-- project work and case studies
-- technical skills and experience
-- certifications and learning milestones
-- contact details for collaboration or opportunities
+The site also supports light and dark themes; the selected theme is saved in local storage.
 
-## Featured projects
+## Selected projects
 
-- DealerRate — dealership review platform with search, review flow, and role-based UX
-- Paradise Nursery — plant shopping storefront with cart and product browsing
-- Book Nook Finder — book discovery app powered by the Open Library API
+- **Best Cars:** dealership listings, ratings, and customer reviews. [Source](https://github.com/youssefwerrad/best-cars) · [Live demo](https://best-cars-1.onrender.com/)
+- **Paradise Nursery:** plant shop with a live cart and dynamic filtering. [Source](https://github.com/youssefwerrad/e-plantShopping) · [Live demo](https://youssefwerrad.github.io/e-plantShopping/)
+- **Book Reviews:** book discovery and reviews using the Open Library API. [Source](https://github.com/youssefwerrad/bookreviews) · [Live demo](https://bookreviews-rwud.onrender.com/)
+- **CarePoint:** clinic management with role-based access, booking, and doctor dashboards. [Source](https://github.com/youssefwerrad/CarePoint) · [Live demo](https://carepoint-yhq2.onrender.com/login)
 
 ## Tech stack
 
-- React
-- Vite
-- JavaScript
-- Tailwind CSS
-- ESLint
-- Vitest
+- React 18 and JavaScript
+- Vite 6
+- Tailwind CSS 3
+- Lucide React icons
+- ESLint and Vitest
+- GitHub Pages deployment via `gh-pages`
 
 ## Getting started
 
@@ -37,38 +39,41 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:5173 in your browser.
+Open the local URL printed by Vite (by default, [http://localhost:8080](http://localhost:8080)).
 
 ## Available scripts
 
 ```bash
-npm run dev      # start the local dev server
-npm run build    # create a production build
-npm run preview  # preview the production build locally
-npm run test     # run the Vitest test suite
-npm run lint     # run ESLint
-npm run deploy   # deploy the dist folder to GitHub Pages
+npm run dev       # start the local development server
+npm run build     # create a production build and GitHub Pages 404 fallback
+npm run preview   # preview the production build locally
+npm run lint      # run ESLint
+npm test          # run Vitest
+npm run test:watch # run Vitest in watch mode
+npm run deploy    # build and publish dist/ to GitHub Pages
 ```
+
+Vitest is configured with a `jsdom` environment, but the repository does not currently include test files. Add tests under `src/` before running `npm test`.
 
 ## Project structure
 
 ```text
 youssefwerrad.github.io/
 ├── public/
+│   ├── favicon.svg
+│   └── screenshots/
 ├── src/
 │   ├── components/
 │   ├── hooks/
 │   ├── lib/
 │   ├── pages/
+│   ├── test/
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── eslint.config.js
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
 ├── index.html
 ├── package.json
-├── postcss.config.cjs
-├── tailwind.config.js
 ├── vite.config.js
 ├── vitest.config.js
 └── README.md
@@ -76,10 +81,6 @@ youssefwerrad.github.io/
 
 ## Contact
 
-- Email: youssefwerrad@gmail.com
+- Email: [youssefwerrad@gmail.com](mailto:youssefwerrad@gmail.com)
 - GitHub: [github.com/youssefwerrad](https://github.com/youssefwerrad)
-- Portfolio: [youssefwerrad.github.io](https://youssefwerrad.github.io)
-
-## Notes
-
-This project is designed as a clean, personal portfolio landing page and is intended to evolve with my latest work, projects, and experiences.
+- LinkedIn: [linkedin.com/in/youssef-werrad-43b1aa401](https://www.linkedin.com/in/youssef-werrad-43b1aa401/)

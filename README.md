@@ -1,174 +1,85 @@
-<div align="center">
+# Youssef Werrad | Portfolio
 
-# Youssef Werrad — Portfolio
+My portfolio website showcases my work as a full-stack developer, with a focus on building polished web experiences, product-driven interfaces, and practical full-stack applications.
 
-**Full Stack Developer · Back-End Developer**
+Live site: [youssefwerrad.github.io](https://youssefwerrad.github.io)
 
-[youssefwerrad.github.io →](https://youssefwerrad.github.io)
+## Overview
 
-</div>
+This repository contains the code for my personal portfolio built with React, Vite, and Tailwind CSS. The site highlights:
 
----
+- project work and case studies
+- technical skills and experience
+- certifications and learning milestones
+- contact details for collaboration or opportunities
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│   Full Stack Developer · Back-End Developer             │
-│                                                         │
-│   Hi, I'm Youssef                                       │
-│   I build things for the web.                           │
-│                                                         │
-│   [ View Projects ↓ ]   [ Let's Connect ]               │
-│                                                         │
-├──────────────┬──────────────┬───────────────────────────┤
-│  About       │  Skills      │  Certifications           │
-│  ──────────  │  ──────────  │  ─────────────────────    │
-│  Full Stack  │  Python  JS  │  ● IBM Full Stack  2024   │
-│  Design      │  React  Node │  ● CS50 Web       2024    │
-│  AI / ML     │  Django  GCP │  ● CS50 AI        2024    │
-│  Cloud       │  Docker  Git │  ● IBM DevOps     2024    │
-│  DevOps      │  + 10 more   │                           │
-├──────────────┴──────────────┴───────────────────────────┤
-│  Projects                                               │
-│  ───────────────────────────────────────────────────    │
-│  DealerRate          → dealer-rate.onrender.com         │
-│  Paradise Nursery    → youssefwerrad.github.io/...      │
-│  Book Nook Finder    → github.com/youssefwerrad/...     │
-├─────────────────────────────────────────────────────────┤
-│  youssefwerrad@gmail.com  ·  github  ·  linkedin        │
-└─────────────────────────────────────────────────────────┘
-```
+## Featured projects
 
----
+- DealerRate — dealership review platform with search, review flow, and role-based UX
+- Paradise Nursery — plant shopping storefront with cart and product browsing
+- Book Nook Finder — book discovery app powered by the Open Library API
 
-## Features
+## Tech stack
 
-- Smooth animations powered by Framer Motion with scroll-reveal effects
-- Browser mockup project cards with tabbed screenshot previews
-- Responsive layout that works across all screen sizes
-- Dark/Light theme support via `next-themes`
-- Accessible components built on Radix UI primitives
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- ESLint
+- Vitest
 
----
-
-## Sections
-
-| Section | Content |
-|---|---|
-| Hero | Introduction, CTA to projects, and Let's Connect button |
-| About | Six capability cards covering Full Stack, AI/ML, Cloud, DevOps, and more |
-| Skills | 18 tech stack icons — Python, JS, React, Django, Flask, Node, Docker, GCP, and more |
-| Certifications | Timeline of Harvard CS50 and IBM certifications |
-| Projects | DealerRate · Paradise Nursery · Book Nook Finder |
-| Contact | Email, GitHub, and LinkedIn links |
-
----
-
-## Projects
-
-### [DealerRate](https://dealer-rate.onrender.com)
-Full-stack car dealership review platform with sentiment analysis, real-time search, async reviews, and a dual-role user system.
-`Django` `Python` `JavaScript` `SQLite`
-
-### [Paradise Nursery](https://youssefwerrad.github.io/e-plantShopping/)
-Responsive e-commerce app for online plant shopping with real-time cart management.
-`React` `Redux Toolkit` `Vite` `JavaScript`
-
-### [Book Nook Finder](https://github.com/youssefwerrad/book-nook-finder)
-Full-stack book search app querying millions of titles via the Open Library API with trending discovery and rich detail modals.
-`React` `Express.js` `Open Library API` `Vite`
-
----
-
-## Tech Stack
-
-| Category | Technologies |
-|---|---|
-| Frontend | React 18, Tailwind CSS, Framer Motion, shadcn/ui, Radix UI |
-| Build | Vite 6, PostCSS |
-| State | Redux Toolkit, TanStack Query |
-| Testing | Vitest, Testing Library |
-| Deploy | GitHub Pages (gh-pages) |
-
----
-
-## Getting Started
+## Getting started
 
 ```bash
-# Clone the repo
 git clone https://github.com/youssefwerrad/youssefwerrad.github.io.git
 cd youssefwerrad.github.io
-
-# Install dependencies
 npm install
-
-# Start dev server
 npm run dev
 ```
 
-Then open [http://localhost:5173](http://localhost:5173).
+Then open http://localhost:5173 in your browser.
 
-### Other commands
+## Available scripts
 
 ```bash
-npm run build      # Production build → /dist
-npm run preview    # Preview the production build locally
-npm run deploy     # Build and deploy to GitHub Pages
-npm run test       # Run tests with Vitest
-npm run lint       # Lint with ESLint
+npm run dev      # start the local dev server
+npm run build    # create a production build
+npm run preview  # preview the production build locally
+npm run test     # run the Vitest test suite
+npm run lint     # run ESLint
+npm run deploy   # deploy the dist folder to GitHub Pages
 ```
 
----
+## Project structure
 
-## Project Structure
-
-```
+```text
 youssefwerrad.github.io/
 ├── public/
-│   ├── favicon.svg
-│   ├── og-image.png
-│   └── screenshots/        # Project preview images
 ├── src/
 │   ├── components/
-│   │   ├── HeroSection.jsx
-│   │   ├── AboutSection.jsx
-│   │   ├── SkillsSection.jsx
-│   │   ├── ExperienceSection.jsx
-│   │   ├── ProjectsSection.jsx
-│   │   ├── ContactSection.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── ScrollReveal.jsx
-│   │   └── ui/             # shadcn/ui components
 │   ├── hooks/
 │   ├── lib/
 │   ├── pages/
 │   ├── App.jsx
-│   └── main.jsx
-├── dist/                   # Production build output
-├── vite.config.js
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.cjs
 ├── tailwind.config.js
-└── package.json
+├── vite.config.js
+├── vitest.config.js
+└── README.md
 ```
 
----
+## Contact
 
-## Let's Connect
-
-I'm always open to interesting conversations, new opportunities, and collaboration on meaningful projects.
-
-- Email: [youssefwerrad@gmail.com](mailto:youssefwerrad@gmail.com)
+- Email: youssefwerrad@gmail.com
 - GitHub: [github.com/youssefwerrad](https://github.com/youssefwerrad)
 - Portfolio: [youssefwerrad.github.io](https://youssefwerrad.github.io)
 
----
+## Notes
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-Made by <a href="https://youssefwerrad.github.io">Youssef Werrad</a>
-</div>
+This project is designed as a clean, personal portfolio landing page and is intended to evolve with my latest work, projects, and experiences.

@@ -52,7 +52,7 @@ function ProjectCard({ project, index }) {
           <img
             src={project.image.src}
             alt={project.image.alt}
-            loading="lazy"
+            loading="eager"
             decoding="async"
           />
           <span className="project-arrow" aria-hidden="true">

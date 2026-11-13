@@ -7,8 +7,8 @@ Personal portfolio for Youssef Werrad, a software engineer. The site introduces 
 ## What’s on the site
 
 - **Home:** introduction and links to projects and contact details.
-- **About:** an overview of my work in full-stack development, interface design, AI and machine learning, cloud deployment, and team workflows.
-- **Skills:** an interactive display of languages, frameworks, and tools, with four layout options.
+- **About:** a short introduction to my approach to product design, systems thinking, creative direction, and independent building.
+- **Skills:** an auto-scrolling carousel of technology cards linking to the languages, frameworks, and tools I use.
 - **Projects:** a carousel featuring project descriptions, repository links, and live demos.
 - **Contact:** email, GitHub, and LinkedIn links.
 

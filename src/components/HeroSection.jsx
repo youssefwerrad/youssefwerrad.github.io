@@ -5,9 +5,9 @@ export const HeroSection = () => {
         <div className="hero-copy-wrap">
           <div className="hero-name-line">
             <h1 className="hero-title">Youssef Werrad</h1>
-            <span className="hero-name-role">Software engineer</span>
+            <span className="hero-name-role">Software Engineer</span>
           </div>
-          <p className="hero-role">Full Stack Developer • Back-End Developer</p>
+          <p className="hero-role">Full-Stack Developer · Python & React</p>
           <p className="hero-copy hero-copy-primary">
             Building thoughtful software for real-world problems.
           </p>

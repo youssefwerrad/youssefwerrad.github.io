@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, Moon, Sun, Command } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -8,85 +8,71 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
+const socialLinks = [
+  { label: "GitHub", href: "https://github.com/youssefwerrad", icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/youssef-werrad-43b1aa401/", icon: Linkedin },
+  { label: "Email", href: "mailto:youssefwerrad@gmail.com", icon: Mail },
+];
+
 export const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => localStorage.getItem("theme") === "dark");
 
   useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    setDark(saved === "dark");
-  }, []);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const toggleTheme = () => {
-    setDark((d) => {
-      const next = !d;
-      document.documentElement.classList.toggle("dark", next);
-      localStorage.setItem("theme", next ? "dark" : "light");
-      return next;
-    });
-  };
+    document.documentElement.classList.toggle("dark-theme", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }, [dark]);
 
   return (
-    <nav
-      className={`site-nav ${scrolled ? "is-scrolled" : ""}`}
-    >
+    <nav className="site-nav">
       <div className="nav-inner">
-        <a href="#home" className="nav-brand">
-          Youssef<span className="neon-text">.</span>
+        <a href="#home" className="nav-brand" aria-label="Youssef Werrad home">
+          <span className="brand-mark">YW</span>
         </a>
 
-        <div className="nav-links">
+        <div className="nav-links desktop-only">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-            >
-              {link.label}
-            </a>
+            <a key={link.href} href={link.href}>{link.label}</a>
           ))}
         </div>
 
         <div className="nav-actions">
-          <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
-            {dark ? <Sun size={17} /> : <Moon size={17} />}
-          </button>
-          <a
-            href="#contact"
-            className="nav-cta"
-          >
-            Let’s talk
-          </a>
           <button
-            onClick={() => setMobileOpen((open) => !open)}
-            className="menu-toggle"
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileOpen}
+            type="button"
+            className="nav-icon-button theme-toggle"
+            onClick={() => setDark((value) => !value)}
+            aria-label={`Switch to ${dark ? "light" : "dark"} theme`}
+            title={`Switch to ${dark ? "light" : "dark"} theme`}
           >
-            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+            {dark ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+          <button
+            type="button"
+            onClick={() => setMobileOpen((open) => !open)}
+            className={`nav-icon-button menu-toggle${mobileOpen ? " is-open" : ""}`}
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="navbar-menu"
+          >
+            {mobileOpen ? <X size={18} /> : <><Command className="command-icon" size={18} /><Menu className="mobile-menu-icon" size={18} /></>}
           </button>
         </div>
       </div>
 
-      {mobileOpen && (
-        <div className="mobile-nav">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
+      <div id="navbar-menu" className={`mobile-nav${mobileOpen ? " is-open" : ""}`} aria-hidden={!mobileOpen}>
+        {navLinks.map((link) => (
+          <a key={link.href} href={link.href} onClick={() => setMobileOpen(false)} tabIndex={mobileOpen ? 0 : -1}>
+            {link.label}
+          </a>
+        ))}
+        <div className="mobile-socials">
+          {socialLinks.map(({ label, href, icon: Icon }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} tabIndex={mobileOpen ? 0 : -1}>
+              <Icon size={14} />
             </a>
           ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };

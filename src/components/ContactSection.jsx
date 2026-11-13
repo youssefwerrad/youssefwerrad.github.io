@@ -9,22 +9,23 @@ const socials = [
 
 export const ContactSection = () => (
   <section id="contact" className="contact-section">
-    <div className="section-wrap">
+    <div className="section-wrap contact-wrap">
       <ScrollReveal>
-        <div>
-          <p className="eyebrow">Have a good one in mind?</p>
-          <h2 className="section-title">Let’s make something useful.</h2>
+        <div className="contact-copy">
+          <p className="eyebrow">Let&apos;s build something meaningful</p>
+          <h2 className="section-title">I&apos;m open to thoughtful collaborations.</h2>
           <p className="section-description">
-            I’m open to interesting conversations, new opportunities, and thoughtful collaborations.
+            If you&apos;re building a product, shaping a brand, or exploring a new idea, I&apos;d love to hear what you&apos;re working on.
           </p>
+
           <div className="contact-socials">
             {socials.map(({ icon: Icon, href, label }) => (
-              <a key={label} href={href} aria-label={label}>
-                <Icon size={15} aria-hidden="true" />
-                {label}
+              <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>
+                <Icon size={20} strokeWidth={1.7} aria-hidden="true" />
               </a>
             ))}
           </div>
+
           <a className="contact-email-link" href="mailto:youssefwerrad@gmail.com">
             youssefwerrad@gmail.com
             <ArrowUpRight size={14} aria-hidden="true" />
@@ -33,7 +34,7 @@ export const ContactSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.1}>
-        <a href="mailto:youssefwerrad@gmail.com" className="button-primary">
+        <a href="mailto:youssefwerrad@gmail.com" className="button-primary contact-button">
           <Mail size={17} />
           Say hello
           <ArrowUpRight size={16} />

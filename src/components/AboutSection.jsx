@@ -1,36 +1,26 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { Code2, Zap, Brain, Cloud, GitBranch, Layout } from "lucide-react";
+import { Palette, Sparkles, Rocket, Workflow } from "lucide-react";
 
 const capabilities = [
   {
-    icon: Code2,
-    title: "Full stack development",
-    description: "Building web applications with Python, JavaScript, React, Django, and Flask.",
+    icon: Palette,
+    title: "Product design",
+    description: "Crafting clear interfaces and deliberate experiences with a strong visual point of view.",
   },
   {
-    icon: Layout,
-    title: "Responsive interfaces",
-    description: "Creating clear, accessible experiences that work across devices.",
+    icon: Workflow,
+    title: "Systems thinking",
+    description: "Designing workflows, automations, and structures that scale without complexity.",
   },
   {
-    icon: Brain,
-    title: "AI & machine learning",
-    description: "Exploring search algorithms, neural networks, and natural language processing.",
+    icon: Sparkles,
+    title: "Creative direction",
+    description: "Turning raw ideas into digital products that feel useful, sharp, and personal.",
   },
   {
-    icon: Cloud,
-    title: "Cloud & deployment",
-    description: "Shipping applications with AWS, Docker, and CI/CD workflows.",
-  },
-  {
-    icon: GitBranch,
-    title: "Team workflows",
-    description: "Working with Git, Agile practices, and thoughtful engineering fundamentals.",
-  },
-  {
-    icon: Zap,
-    title: "Always learning",
-    description: "Building a strong foundation through Harvard CS50 and IBM programs.",
+    icon: Rocket,
+    title: "Independent building",
+    description: "Shipping experiments and products with focus, curiosity, and a bias for real value.",
   },
 ];
 
@@ -40,10 +30,9 @@ export const AboutSection = () => (
       <ScrollReveal className="about-statement">
         <div className="section-heading">
           <p className="eyebrow">A little about me</p>
-          <h2 className="section-title">Curiosity meets craft.</h2>
+          <h2 className="section-title">I design for leverage.</h2>
           <p className="section-description">
-            I enjoy taking a problem from the first sketch to a working product—bringing
-            together practical engineering and a considered user experience.
+            I&apos;m interested in the intersection of product, systems, and personal craft: building things that feel elegant, useful, and worth returning to.
           </p>
         </div>
       </ScrollReveal>

@@ -76,7 +76,7 @@ select {
 .site-header {
   position: relative;
   display: flex;
-  min-height: calc(100svh - 76px);
+  min-height: calc(80svh - 76px);
   flex-direction: column;
   overflow: hidden;
   background: var(--bg);
@@ -348,21 +348,59 @@ select {
 
 .hero-aside {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-right: clamp(0rem, 3vw, 2rem);
 }
 
-.hero-signature {
+.hero-issuer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 0.8rem 0.7rem;
+}
+
+.hero-certification-note {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-issuer {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.hero-issuer:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.hero-issuer-mark {
   display: block;
-  color: var(--ink);
-  font-family: 'Caveat', cursive;
-  font-size: clamp(9rem, 21vw, 15rem);
-  font-weight: 400;
-  letter-spacing: -0.12em;
-  line-height: 0.7;
-  transform: rotate(-12deg);
-  user-select: none;
+  width: 7rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.hero-issuer-mark--harvard {
+  width: 2.3rem;
+  height: 2.7rem;
+}
+
+.hero-issuer-name {
+  color: var(--muted);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .eyebrow {
@@ -387,6 +425,73 @@ select {
   width: min(1240px, calc(100% - 2rem));
   margin: 0 auto;
   padding: clamp(4.5rem, 7vw, 7rem) 0;
+}
+
+.featured-project {
+  border-block: 1px solid var(--border);
+}
+
+.featured-project-inner {
+  width: min(1024px, calc(100% - 5rem));
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+  gap: 2rem;
+  align-items: center;
+}
+
+.featured-project-copy .eyebrow {
+  margin-bottom: 0.6rem;
+}
+
+.featured-project-copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.featured-project-copy > p:not(.eyebrow) {
+  max-width: 580px;
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.featured-project-copy > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.featured-project-copy > a:hover {
+  opacity: 0.62;
+}
+
+.featured-project-preview {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 16 / 10;
+}
+
+.featured-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.featured-project-preview:hover img {
+  transform: scale(1.035);
 }
 
 .section-heading {
@@ -701,10 +806,29 @@ select {
 }
 
 .contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
   min-width: 180px;
-  background: rgba(17, 17, 17, 0.95);
-  border-color: rgba(17, 17, 17, 0.95);
-  color: #f8f3ec;
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #111111;
+  background: #ffffff;
+  color: #111111;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-1px);
+  background: #f2f2f2;
+}
+
+.contact-button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .site-footer {
@@ -817,11 +941,16 @@ select {
     padding: 2.5rem 2rem 8rem;
   }
 
+  .featured-project-inner {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+  }
+
   .hero-aside {
     position: absolute;
     right: 0;
-    bottom: 1.5rem;
-    opacity: 0.3;
+    bottom: 0.75rem;
+    width: auto;
   }
 
   .about-layout,
@@ -843,7 +972,7 @@ select {
   }
 
   .site-header {
-    min-height: calc(100svh - 70px);
+    min-height: calc(80svh - 70px);
   }
 
   .mobile-nav {
@@ -863,12 +992,28 @@ select {
     padding: 2.5rem 0 8rem;
   }
 
+  .featured-project-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .featured-project-preview {
+    max-width: 360px;
+  }
+
   .hero-aside {
     bottom: 2rem;
   }
 
-  .hero-signature {
-    font-size: clamp(8rem, 34vw, 12rem);
+  .hero-issuer-mark {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  .hero-issuer-mark--harvard {
+    width: 2rem;
+    height: 2.4rem;
   }
 
   .tech-track-group {
@@ -974,6 +1119,16 @@ html.dark-theme .projects-carousel-dot.is-active {
 html.dark-theme .contact-section,
 html.dark-theme .site-footer {
   background: transparent;
+}
+
+html.dark-theme .contact-button {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+html.dark-theme .contact-button:hover {
+  background: #2d2d2d;
 }
 
 @media (prefers-reduced-motion: reduce) {

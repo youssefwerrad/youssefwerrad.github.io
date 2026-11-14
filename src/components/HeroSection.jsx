@@ -1,3 +1,11 @@
+const BASE = import.meta.env.BASE_URL;
+
+const issuers = [
+  { name: "IBM", mark: "ibm", logo: "issuer-logos/ibm.svg" },
+  { name: "Cisco", mark: "cisco", logo: "issuer-logos/cisco.svg" },
+  { name: "HarvardX", mark: "harvard", logo: "issuer-logos/harvard-shield.svg" },
+];
+
 export const HeroSection = () => {
   return (
     <section id="home" className="hero-section">
@@ -16,8 +24,25 @@ export const HeroSection = () => {
           </p>
         </div>
 
-        <aside className="hero-aside" aria-hidden="true">
-          <span className="hero-signature">YW</span>
+        <aside
+          className="hero-aside"
+          aria-label="Certified by HarvardX, IBM, and Cisco"
+        >
+          <p className="hero-certification-note">Coursework &amp; credentials from</p>
+          <div className="hero-issuer-links">
+            {issuers.map((issuer) => (
+              <div className="hero-issuer" key={issuer.name}>
+                <img
+                  className={`hero-issuer-mark hero-issuer-mark--${issuer.mark}`}
+                  src={`${BASE}${issuer.logo}`}
+                  alt={`${issuer.name} logo`}
+                  loading="eager"
+                  decoding="async"
+                />
+                <span className="hero-issuer-name">{issuer.name}</span>
+              </div>
+            ))}
+          </div>
         </aside>
       </div>
     </section>

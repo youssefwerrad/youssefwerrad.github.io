@@ -1,5 +1,5 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { FileText, Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
 
 const socials = [
   { icon: Github, href: "https://github.com/youssefwerrad", label: "GitHub" },
@@ -34,10 +34,16 @@ export const ContactSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={0.1}>
-        <a href="mailto:youssefwerrad@gmail.com" className="button-primary contact-button">
-          <Mail size={17} />
-          Say hello
-          <ArrowUpRight size={16} />
+        <a
+          href={`${import.meta.env.BASE_URL}Youssef_Werrad_Resume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View résumé (opens in a new tab)"
+          className="button-primary contact-button"
+        >
+          <FileText size={17} aria-hidden="true" />
+          View résumé
+          <ArrowUpRight size={16} aria-hidden="true" />
         </a>
       </ScrollReveal>
     </div>

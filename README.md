@@ -10,7 +10,7 @@ Personal portfolio for Youssef Werrad, a software engineer. The site introduces 
 - **About:** a short introduction to my approach to product design, systems thinking, creative direction, and independent building.
 - **Skills:** an auto-scrolling carousel of technology cards linking to the languages, frameworks, and tools I use.
 - **Projects:** a carousel featuring project descriptions, repository links, and live demos.
-- **Contact:** email, GitHub, and LinkedIn links.
+- **Contact:** a résumé link, email, GitHub, and LinkedIn links.
 
 The site also supports light and dark themes; the selected theme is saved in local storage.
 
